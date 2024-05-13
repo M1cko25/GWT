@@ -21,6 +21,7 @@ namespace GWT
     {
         private string connstring = "Server=127.0.0.1;Database=gwt_db;username=root";
         private LandingForm landing = new LandingForm();
+        private User _user = new User();
         public signUpForm()
         {
             InitializeComponent();
@@ -70,6 +71,7 @@ namespace GWT
                 int y = eye.Location.Y;
                 eye.Location = new Point(x, y);
             }
+            loading.Location = new Point(0, 0);
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
@@ -126,27 +128,22 @@ namespace GWT
                 try
                 {
                     status status = new status();
-                    if (!status.isLoggedIn)
-                    {
-                        MySqlConnection con = new MySqlConnection(connstring);
-                        con.Open();
+                    MySqlConnection con = new MySqlConnection(connstring);
+                    con.Open();
 
-                        string qry = "INSERT INTO `users`(`id`, `username`, `password`) VALUES (?, ?, ?)";
-                        MySqlCommand cmd = new MySqlCommand(qry, con);
-                        cmd.Parameters.AddWithValue("param1", null);
-                        cmd.Parameters.AddWithValue("param2", user);
-                        cmd.Parameters.AddWithValue("param3", pass);
+                    string qry = "INSERT INTO `users`(`id`, `username`, `password`) VALUES (?, ?, ?)";
+                    MySqlCommand cmd = new MySqlCommand(qry, con);
+                    cmd.Parameters.AddWithValue("param1", null);
+                    cmd.Parameters.AddWithValue("param2", user);
+                    cmd.Parameters.AddWithValue("param3", pass);
 
-                        cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
 
-                        status.isLoggedIn = true;
-                        this.Hide();
-                        landing.Show();
-                    } else
-                    {
-                        this.Hide();
-                        landing.Show();
-                    }
+                    _user.username = user;
+                    status.isLoggedIn = true;
+                    timer.Start();
+                    loading.Visible = true;
+                    con.Close();
                 }
                 catch (Exception ex)
                 {
@@ -161,6 +158,14 @@ namespace GWT
             this.Hide();
             Login login = new Login();
             login.Show();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            loading.Visible = false;
+            this.Hide();
+            landing.Show();
+            timer.Stop();
         }
     }
 }

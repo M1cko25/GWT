@@ -16,6 +16,7 @@ namespace GWT
     public partial class Login : Form
     {
         private string connstring = "Server=127.0.0.1;Database=gwt_db;username=root";
+        private signUpForm signUp = new signUpForm();
         private LandingForm landing = new LandingForm();
         public Login()
         {
@@ -63,7 +64,7 @@ namespace GWT
             int x1 = userTxt.Location.X + userTxt.Width;
             int y1 = passEye.Location.Y;
             passEye.Location = new Point(x1, y1);
-            
+            loading.Location = new Point(0, 0);
         }
 
         private void closeBtn_Click(object sender, EventArgs e)
@@ -82,8 +83,76 @@ namespace GWT
             }
             else
             {
+                try
+                {
+                    MySqlConnection conn = new MySqlConnection(connstring);
+                    conn.Open();
 
+                    string qry = "SELECT `username`, `password` FROM `users` WHERE username = @username and password = @pass";
+                    MySqlCommand cmd = new MySqlCommand(qry, conn);
+                    cmd.Parameters.AddWithValue("@username", user);
+                    cmd.Parameters.AddWithValue("@pass", pass);
+                    MySqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        timer.Start();
+                        loading.Visible = true;
+                    } else
+                    {
+                        MessageBox.Show("Wrong username or password");
+                    }
+                } catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex);
+                }
             }
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loading_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            loading.Visible = false;
+            this.Hide();
+            landing.Show();
+            timer.Stop();
+        }
+
+        private void passEye_CheckedChanged(object sender, EventArgs e)
+        {
+            if (passEye.Checked)
+            {
+                passTxt.PasswordChar = '\0';
+            } else
+            {
+                passTxt.PasswordChar = '•';
+            }
+        }
+
+        private void signUpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            signUp.Show();
+        }
+
+        private void skipLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            landing.Show();
+        }
+
+        private void forgotpass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

@@ -103,6 +103,26 @@ namespace GWT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap femaleGWT {
+            get {
+                object obj = ResourceManager.GetObject("femaleGWT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fluent_minimize_24_filled {
+            get {
+                object obj = ResourceManager.GetObject("fluent_minimize-24-filled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_9 {
             get {
                 object obj = ResourceManager.GetObject("Group 9", resourceCulture);
@@ -116,6 +136,36 @@ namespace GWT.Properties {
         internal static System.Drawing.Bitmap Group_91 {
             get {
                 object obj = ResourceManager.GetObject("Group 91", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gymLoading {
+            get {
+                object obj = ResourceManager.GetObject("gymLoading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gymLoading2 {
+            get {
+                object obj = ResourceManager.GetObject("gymLoading2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maleGWT {
+            get {
+                object obj = ResourceManager.GetObject("maleGWT", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

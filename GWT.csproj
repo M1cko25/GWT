@@ -313,6 +313,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas.Designer.cs">
+      <DependentUpon>Areas.cs</DependentUpon>
+    </Compile>
     <Compile Include="LandingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -335,6 +341,10 @@
       <DependentUpon>signUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="status.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="Areas.resx">
+      <DependentUpon>Areas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LandingForm.resx">
       <DependentUpon>LandingForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -364,6 +374,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\gymLoading.gif" />
+    <None Include="Resources\gymLoading2.gif" />
+    <None Include="Resources\maleGWT.png" />
+    <None Include="Resources\femaleGWT.png" />
+    <None Include="Resources\fluent_minimize-24-filled.png" />
     <Content Include="Resources\Poppins-Bold.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
