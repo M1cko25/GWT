@@ -16,7 +16,7 @@ namespace GWT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new signUpForm());
+            Application.Run(new Login());
         }
     }
 }

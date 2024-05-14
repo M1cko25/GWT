@@ -31,8 +31,6 @@ namespace GWT
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.closeBtn = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.passEye = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.skipLink = new System.Windows.Forms.LinkLabel();
             this.loginBtn = new Guna.UI2.WinForms.Guna2Button();
             this.signUpLink = new System.Windows.Forms.LinkLabel();
@@ -44,36 +42,17 @@ namespace GWT
             this.panel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.forgotpass = new System.Windows.Forms.LinkLabel();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.loading = new System.Windows.Forms.PictureBox();
+            this.passEye = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.closeBtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.loading)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.TargetControl = this;
-            // 
-            // closeBtn
-            // 
-            this.closeBtn.CheckedState.Parent = this.closeBtn;
-            this.closeBtn.HoverState.Parent = this.closeBtn;
-            this.closeBtn.Image = global::GWT.Properties.Resources.closeBtn;
-            this.closeBtn.Location = new System.Drawing.Point(463, 8);
-            this.closeBtn.Name = "closeBtn";
-            this.closeBtn.PressedState.Parent = this.closeBtn;
-            this.closeBtn.Size = new System.Drawing.Size(25, 25);
-            this.closeBtn.TabIndex = 1;
-            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
-            // 
-            // passEye
-            // 
-            this.passEye.CheckedState.Image = global::GWT.Properties.Resources.eye_closed;
-            this.passEye.CheckedState.Parent = this.passEye;
-            this.passEye.HoverState.Parent = this.passEye;
-            this.passEye.Image = global::GWT.Properties.Resources.eye_open;
-            this.passEye.Location = new System.Drawing.Point(363, 178);
-            this.passEye.Name = "passEye";
-            this.passEye.PressedState.Parent = this.passEye;
-            this.passEye.Size = new System.Drawing.Size(27, 23);
-            this.passEye.TabIndex = 22;
             // 
             // skipLink
             // 
@@ -86,6 +65,7 @@ namespace GWT
             this.skipLink.TabIndex = 21;
             this.skipLink.TabStop = true;
             this.skipLink.Text = "Skip";
+            this.skipLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.skipLink_LinkClicked);
             // 
             // loginBtn
             // 
@@ -115,6 +95,7 @@ namespace GWT
             this.signUpLink.TabIndex = 19;
             this.signUpLink.TabStop = true;
             this.signUpLink.Text = "Don\'t Have An Account?";
+            this.signUpLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signUpLink_LinkClicked);
             // 
             // passLbl
             // 
@@ -223,6 +204,49 @@ namespace GWT
             this.forgotpass.TabIndex = 23;
             this.forgotpass.TabStop = true;
             this.forgotpass.Text = "Forgot Password?";
+            this.forgotpass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.forgotpass_LinkClicked);
+            // 
+            // timer
+            // 
+            this.timer.Interval = 3000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // loading
+            // 
+            this.loading.BackColor = System.Drawing.Color.Transparent;
+            this.loading.Image = global::GWT.Properties.Resources.loadingAnimationGWT1;
+            this.loading.Location = new System.Drawing.Point(500, 0);
+            this.loading.Name = "loading";
+            this.loading.Size = new System.Drawing.Size(500, 367);
+            this.loading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.loading.TabIndex = 25;
+            this.loading.TabStop = false;
+            this.loading.Visible = false;
+            // 
+            // passEye
+            // 
+            this.passEye.CheckedState.Image = global::GWT.Properties.Resources.eye_closed;
+            this.passEye.CheckedState.Parent = this.passEye;
+            this.passEye.HoverState.Parent = this.passEye;
+            this.passEye.Image = global::GWT.Properties.Resources.eye_open;
+            this.passEye.Location = new System.Drawing.Point(363, 178);
+            this.passEye.Name = "passEye";
+            this.passEye.PressedState.Parent = this.passEye;
+            this.passEye.Size = new System.Drawing.Size(27, 23);
+            this.passEye.TabIndex = 22;
+            this.passEye.CheckedChanged += new System.EventHandler(this.passEye_CheckedChanged);
+            // 
+            // closeBtn
+            // 
+            this.closeBtn.CheckedState.Parent = this.closeBtn;
+            this.closeBtn.HoverState.Parent = this.closeBtn;
+            this.closeBtn.Image = global::GWT.Properties.Resources.closeBtn;
+            this.closeBtn.Location = new System.Drawing.Point(463, 8);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.PressedState.Parent = this.closeBtn;
+            this.closeBtn.Size = new System.Drawing.Size(25, 25);
+            this.closeBtn.TabIndex = 1;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // Login
             // 
@@ -230,6 +254,7 @@ namespace GWT
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(500, 368);
+            this.Controls.Add(this.loading);
             this.Controls.Add(this.forgotpass);
             this.Controls.Add(this.passEye);
             this.Controls.Add(this.skipLink);
@@ -247,6 +272,7 @@ namespace GWT
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.loading)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,5 +294,7 @@ namespace GWT
         private Guna.UI2.WinForms.Guna2ImageButton closeBtn;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private System.Windows.Forms.LinkLabel forgotpass;
+        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.PictureBox loading;
     }
 }

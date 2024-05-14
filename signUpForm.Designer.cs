@@ -43,10 +43,13 @@ namespace GWT
             this.SignUpBtn = new Guna.UI2.WinForms.Guna2Button();
             this.skipLink = new System.Windows.Forms.LinkLabel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.loading = new System.Windows.Forms.PictureBox();
             this.conEye = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.passEye = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.closeBtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.loading)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -226,6 +229,23 @@ namespace GWT
             // 
             this.guna2DragControl1.TargetControl = this.panel;
             // 
+            // timer
+            // 
+            this.timer.Interval = 2500;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // loading
+            // 
+            this.loading.BackColor = System.Drawing.Color.Transparent;
+            this.loading.Image = global::GWT.Properties.Resources.loadingAnimationGWT1;
+            this.loading.Location = new System.Drawing.Point(501, 0);
+            this.loading.Name = "loading";
+            this.loading.Size = new System.Drawing.Size(500, 370);
+            this.loading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.loading.TabIndex = 14;
+            this.loading.TabStop = false;
+            this.loading.Visible = false;
+            // 
             // conEye
             // 
             this.conEye.CheckedState.Image = global::GWT.Properties.Resources.eye_closed;
@@ -270,6 +290,7 @@ namespace GWT
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(500, 368);
+            this.Controls.Add(this.loading);
             this.Controls.Add(this.conEye);
             this.Controls.Add(this.passEye);
             this.Controls.Add(this.skipLink);
@@ -289,6 +310,7 @@ namespace GWT
             this.Text = "signUpForm";
             this.Load += new System.EventHandler(this.signUpForm_Load);
             this.panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.loading)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,5 +334,7 @@ namespace GWT
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2ImageCheckBox passEye;
         private Guna.UI2.WinForms.Guna2ImageCheckBox conEye;
+        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.PictureBox loading;
     }
 }
