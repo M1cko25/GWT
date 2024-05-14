@@ -73,6 +73,26 @@ namespace GWT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carbon_next_outline {
+            get {
+                object obj = ResourceManager.GetObject("carbon_next-outline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap carbon_next_outline1 {
+            get {
+                object obj = ResourceManager.GetObject("carbon_next-outline1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap closeBtn {
             get {
                 object obj = ResourceManager.GetObject("closeBtn", resourceCulture);
@@ -163,9 +183,49 @@ namespace GWT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap loadingAnimationGWT {
+            get {
+                object obj = ResourceManager.GetObject("loadingAnimationGWT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loadingAnimationGWT1 {
+            get {
+                object obj = ResourceManager.GetObject("loadingAnimationGWT1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loadingAnimationGWT2 {
+            get {
+                object obj = ResourceManager.GetObject("loadingAnimationGWT2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maleGWT {
             get {
                 object obj = ResourceManager.GetObject("maleGWT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mingcute_back_fill {
+            get {
+                object obj = ResourceManager.GetObject("mingcute_back-fill", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -71,6 +71,7 @@ namespace GWT
                 int y = eye.Location.Y;
                 eye.Location = new Point(x, y);
             }
+            loading.BackColor = Color.FromArgb(100, 85, 44, 87);
             loading.Location = new Point(0, 0);
         }
 

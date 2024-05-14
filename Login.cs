@@ -64,6 +64,7 @@ namespace GWT
             int x1 = userTxt.Location.X + userTxt.Width;
             int y1 = passEye.Location.Y;
             passEye.Location = new Point(x1, y1);
+            loading.BackColor = Color.FromArgb(100, 85, 44, 87);
             loading.Location = new Point(0, 0);
         }
 

@@ -319,6 +319,12 @@
     <Compile Include="Areas.Designer.cs">
       <DependentUpon>Areas.cs</DependentUpon>
     </Compile>
+    <Compile Include="BMI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMI.Designer.cs">
+      <DependentUpon>BMI.cs</DependentUpon>
+    </Compile>
     <Compile Include="LandingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -341,9 +347,18 @@
       <DependentUpon>signUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="status.cs" />
+    <Compile Include="TrainingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainingForm.Designer.cs">
+      <DependentUpon>TrainingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="Areas.resx">
       <DependentUpon>Areas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMI.resx">
+      <DependentUpon>BMI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LandingForm.resx">
       <DependentUpon>LandingForm.cs</DependentUpon>
@@ -364,6 +379,9 @@
     <EmbeddedResource Include="signUpForm.resx">
       <DependentUpon>signUpForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TrainingForm.resx">
+      <DependentUpon>TrainingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -379,6 +397,12 @@
     <None Include="Resources\maleGWT.png" />
     <None Include="Resources\femaleGWT.png" />
     <None Include="Resources\fluent_minimize-24-filled.png" />
+    <None Include="Resources\carbon_next-outline.png" />
+    <None Include="Resources\mingcute_back-fill.png" />
+    <None Include="Resources\carbon_next-outline1.png" />
+    <None Include="Resources\loadingAnimationGWT.gif" />
+    <None Include="Resources\loadingAnimationGWT1.gif" />
+    <None Include="Resources\loadingAnimationGWT2.gif" />
     <Content Include="Resources\Poppins-Bold.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

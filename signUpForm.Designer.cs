@@ -32,7 +32,6 @@ namespace GWT
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.closeBtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.Header = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.userTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.UserLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -44,10 +43,11 @@ namespace GWT
             this.SignUpBtn = new Guna.UI2.WinForms.Guna2Button();
             this.skipLink = new System.Windows.Forms.LinkLabel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.conEye = new Guna.UI2.WinForms.Guna2ImageCheckBox();
-            this.passEye = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.loading = new System.Windows.Forms.PictureBox();
+            this.conEye = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.passEye = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.closeBtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loading)).BeginInit();
             this.SuspendLayout();
@@ -66,18 +66,6 @@ namespace GWT
             this.panel.ShadowDecoration.Parent = this.panel;
             this.panel.Size = new System.Drawing.Size(500, 40);
             this.panel.TabIndex = 0;
-            // 
-            // closeBtn
-            // 
-            this.closeBtn.CheckedState.Parent = this.closeBtn;
-            this.closeBtn.HoverState.Parent = this.closeBtn;
-            this.closeBtn.Image = global::GWT.Properties.Resources.closeBtn;
-            this.closeBtn.Location = new System.Drawing.Point(463, 8);
-            this.closeBtn.Name = "closeBtn";
-            this.closeBtn.PressedState.Parent = this.closeBtn;
-            this.closeBtn.Size = new System.Drawing.Size(25, 25);
-            this.closeBtn.TabIndex = 1;
-            this.closeBtn.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // Header
             // 
@@ -241,6 +229,23 @@ namespace GWT
             // 
             this.guna2DragControl1.TargetControl = this.panel;
             // 
+            // timer
+            // 
+            this.timer.Interval = 2500;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // loading
+            // 
+            this.loading.BackColor = System.Drawing.Color.Transparent;
+            this.loading.Image = global::GWT.Properties.Resources.loadingAnimationGWT1;
+            this.loading.Location = new System.Drawing.Point(501, 0);
+            this.loading.Name = "loading";
+            this.loading.Size = new System.Drawing.Size(500, 370);
+            this.loading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.loading.TabIndex = 14;
+            this.loading.TabStop = false;
+            this.loading.Visible = false;
+            // 
             // conEye
             // 
             this.conEye.CheckedState.Image = global::GWT.Properties.Resources.eye_closed;
@@ -267,22 +272,17 @@ namespace GWT
             this.passEye.TabIndex = 12;
             this.passEye.CheckedChanged += new System.EventHandler(this.passEye_CheckedChanged);
             // 
-            // timer
+            // closeBtn
             // 
-            this.timer.Interval = 2500;
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
-            // loading
-            // 
-            this.loading.BackColor = System.Drawing.Color.Transparent;
-            this.loading.Image = global::GWT.Properties.Resources.gymLoading;
-            this.loading.Location = new System.Drawing.Point(501, 0);
-            this.loading.Name = "loading";
-            this.loading.Size = new System.Drawing.Size(500, 370);
-            this.loading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.loading.TabIndex = 14;
-            this.loading.TabStop = false;
-            this.loading.Visible = false;
+            this.closeBtn.CheckedState.Parent = this.closeBtn;
+            this.closeBtn.HoverState.Parent = this.closeBtn;
+            this.closeBtn.Image = global::GWT.Properties.Resources.closeBtn;
+            this.closeBtn.Location = new System.Drawing.Point(463, 8);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.PressedState.Parent = this.closeBtn;
+            this.closeBtn.Size = new System.Drawing.Size(25, 25);
+            this.closeBtn.TabIndex = 1;
+            this.closeBtn.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // signUpForm
             // 

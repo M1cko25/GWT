@@ -42,10 +42,10 @@ namespace GWT
             this.panel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.forgotpass = new System.Windows.Forms.LinkLabel();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.loading = new System.Windows.Forms.PictureBox();
             this.passEye = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.closeBtn = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.loading = new System.Windows.Forms.PictureBox();
-            this.timer = new System.Windows.Forms.Timer(this.components);
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loading)).BeginInit();
             this.SuspendLayout();
@@ -206,6 +206,23 @@ namespace GWT
             this.forgotpass.Text = "Forgot Password?";
             this.forgotpass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.forgotpass_LinkClicked);
             // 
+            // timer
+            // 
+            this.timer.Interval = 3000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // loading
+            // 
+            this.loading.BackColor = System.Drawing.Color.Transparent;
+            this.loading.Image = global::GWT.Properties.Resources.loadingAnimationGWT1;
+            this.loading.Location = new System.Drawing.Point(500, 0);
+            this.loading.Name = "loading";
+            this.loading.Size = new System.Drawing.Size(500, 367);
+            this.loading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.loading.TabIndex = 25;
+            this.loading.TabStop = false;
+            this.loading.Visible = false;
+            // 
             // passEye
             // 
             this.passEye.CheckedState.Image = global::GWT.Properties.Resources.eye_closed;
@@ -230,23 +247,6 @@ namespace GWT
             this.closeBtn.Size = new System.Drawing.Size(25, 25);
             this.closeBtn.TabIndex = 1;
             this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
-            // 
-            // loading
-            // 
-            this.loading.Image = global::GWT.Properties.Resources.gymLoading;
-            this.loading.Location = new System.Drawing.Point(501, 0);
-            this.loading.Name = "loading";
-            this.loading.Size = new System.Drawing.Size(497, 367);
-            this.loading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.loading.TabIndex = 24;
-            this.loading.TabStop = false;
-            this.loading.Visible = false;
-            this.loading.Click += new System.EventHandler(this.loading_Click);
-            // 
-            // timer
-            // 
-            this.timer.Interval = 3000;
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // Login
             // 
@@ -294,7 +294,7 @@ namespace GWT
         private Guna.UI2.WinForms.Guna2ImageButton closeBtn;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private System.Windows.Forms.LinkLabel forgotpass;
-        private System.Windows.Forms.PictureBox loading;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.PictureBox loading;
     }
 }

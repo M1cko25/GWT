@@ -15,6 +15,8 @@ namespace GWT
 
         //public string username, gender;
         //public int height, weight;
-        public bool back, shoulder, arm, chest, abs, butt, leg, fullbody;
+        public bool back = false, shoulder = false, arm = false, chest = false, abs = false, butt = false, leg = false, fullbody = false;
+        
     }
+    
 }
