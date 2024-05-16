@@ -21,7 +21,7 @@ namespace GWT
     {
         private string connstring = "Server=127.0.0.1;Database=gwt_db;username=root";
         private LandingForm landing = new LandingForm();
-        private User _user = new User();
+       
         public signUpForm()
         {
             InitializeComponent();
@@ -107,8 +107,8 @@ namespace GWT
         private void skipLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            LandingForm landingForm = new LandingForm();
-            landingForm.Show();
+            landing.trainingForm.username = "ME";
+            landing.Show();
         }
 
         private void SignUpBtn_Click(object sender, EventArgs e)
@@ -128,7 +128,7 @@ namespace GWT
             {
                 try
                 {
-                    status status = new status();
+                    Stacks status = new Stacks();
                     MySqlConnection con = new MySqlConnection(connstring);
                     con.Open();
 
@@ -140,8 +140,8 @@ namespace GWT
 
                     cmd.ExecuteNonQuery();
 
-                    _user.username = user;
-                    status.isLoggedIn = true;
+                    landing.trainingForm.username = user;
+                    landing.trainingForm.isLoggedIn = true;
                     timer.Start();
                     loading.Visible = true;
                     con.Close();

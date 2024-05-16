@@ -12,8 +12,8 @@ namespace GWT
 {
     public partial class Areas : Form
     {
-        private BMI bmiForm = new BMI();
-
+        public string username, gender;
+        public bool back = false, shoulder = false, arm = false, chest = false, abs = false, butt = false, leg = false;
         public Areas()
         {
             InitializeComponent();
@@ -26,10 +26,26 @@ namespace GWT
 
         private void backBtn_Click(object sender, EventArgs e)
         {
+            if (back == false)
+            {
+                back = true;
+            }
+            else
+            {
+                back = false;
+            }
             btntoggle(backBtn);
         }
         private void shouderBtn_Click(object sender, EventArgs e)
         {
+            if (shoulder == false)
+            {
+                shoulder = true;
+            }
+            else
+            {
+                shoulder = false;
+            }
             btntoggle(shouderBtn);
         }
         private void btntoggle(Guna.UI2.WinForms.Guna2Button btn)
@@ -50,26 +66,65 @@ namespace GWT
 
         private void armBtn_Click(object sender, EventArgs e)
         {
+            if (arm == false)
+            {
+                arm = true;
+            }
+            else
+            {
+                arm = false;
+            }
             btntoggle(armBtn);
         }
 
         private void chestBtn_Click(object sender, EventArgs e)
         {
+            if (chest == false)
+            {
+                chest = true;
+            }
+            else
+            {
+                chest = false;
+            }
             btntoggle(chestBtn);
         }
 
         private void absBtn_Click(object sender, EventArgs e)
         {
+            if (abs == false)
+            {
+                abs = true;
+            }
+            else
+            {
+                abs = false;
+            }
             btntoggle(absBtn);
         }
 
         private void buttBtn_Click(object sender, EventArgs e)
         {
+            if (butt == false)
+            {
+                butt = true;
+            }
+            else
+            {
+                butt = false;
+            }
             btntoggle(buttBtn);
         }
 
         private void legBtn_Click(object sender, EventArgs e)
         {
+            if (leg == false)
+            {
+                leg = true;
+            } else
+            {
+                leg = false;
+            }
             btntoggle(legBtn);
         }
 
@@ -79,21 +134,37 @@ namespace GWT
             Color uncheckedColor = Color.FromArgb(255, 85, 44, 87);
             Guna.UI2.WinForms.Guna2Button[] btns = { backBtn,shouderBtn,chestBtn,absBtn, armBtn, buttBtn, legBtn };
             
+            
             if (fullBodyBtn.FillColor == uncheckedColor)
             {
                 fullBodyBtn.FillColor = checkedColor;
-                foreach (Guna.UI2.WinForms.Guna2Button button in btns)
+                for (int i = 0; i < btns.Length; i++)
                 {
-                    button.FillColor = checkedColor;
+                    btns[i].FillColor = checkedColor;
+                    back = true;
+                    shoulder = true;
+                    arm = true;
+                    chest = true;
+                    abs = true;
+                    butt = true;
+                    leg = true;
                 }
             }
             else
             {
                 fullBodyBtn.FillColor = uncheckedColor;
-                foreach (Guna.UI2.WinForms.Guna2Button button in btns)
+                for (int i = 0; i < btns.Length; i++)
                 {
-                    button.FillColor = uncheckedColor;
+                    btns[i].FillColor = uncheckedColor;
+                    back = false;
+                    shoulder = false;
+                    arm = false;
+                    chest = false;
+                    abs = false;
+                    butt = false;
+                    leg = false;
                 }
+
             }
         }
 

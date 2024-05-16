@@ -14,10 +14,9 @@ namespace GWT
     public partial class LandingForm : Form
     {
         private int yOffset = 20;
-        private User _user = new User();
-        private Areas areasForm = new Areas();
-        private BMI bmiForm = new BMI();
-        private TrainingForm trainingForm = new TrainingForm();
+        public BMI bmiForm = new BMI();
+        public TrainingForm trainingForm = new TrainingForm();
+       
         
         public LandingForm()
         {
@@ -61,37 +60,40 @@ namespace GWT
 
         private void maleBtn_Click(object sender, EventArgs e)
         {
-            _user.gender = "Male";
+            trainingForm.gender = "Male";
             Control[] genderCont = { maleBtn, femaleBtn, maleLbl, femaleLbl, headerLbl };
             foreach(Control cont in genderCont)
             {
                 mainPanel.Controls.Remove(cont);
+                //cont.Dispose();
             }
-
-            mainPanel.Controls.Add(areasForm.AreasContent);
+            
+            mainPanel.Controls.Add(trainingForm.areasForm.AreasContent);
             BtnBack.Visible = true;
             BtnNext.Visible = true;
         }
 
         private void femaleBtn_Click(object sender, EventArgs e)
         {
-            _user.gender = "Female";
+            trainingForm.gender = "Female";
             Control[] genderCont = { maleBtn, femaleBtn, maleLbl, femaleLbl, headerLbl };
             foreach (Control cont in genderCont)
             {
                 mainPanel.Controls.Remove(cont);
+                //cont.Dispose();
             }
 
-            mainPanel.Controls.Add(areasForm.AreasContent);
+            mainPanel.Controls.Add(trainingForm.areasForm.AreasContent);
             BtnBack.Visible = true;
             BtnNext.Visible = true;
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
-            if (mainPanel.Controls.Contains(areasForm.AreasContent))
+            if (mainPanel.Controls.Contains(trainingForm.areasForm.AreasContent))
             {
-                mainPanel.Controls.Remove(areasForm.AreasContent);
+                mainPanel.Controls.Remove(trainingForm.areasForm.AreasContent);
+                //areasForm.AreasContent.Dispose();
                 Control[] genderCont = { maleBtn, femaleBtn, maleLbl, femaleLbl, headerLbl };
                 foreach (Control cont in genderCont)
                 {
@@ -102,26 +104,30 @@ namespace GWT
             } else if (mainPanel.Controls.Contains(bmiForm.BmiContent))
             {
                 mainPanel.Controls.Remove(bmiForm.BmiContent);
-                mainPanel.Controls.Add(areasForm.AreasContent);
+                //bmiForm.BmiContent.Dispose();
+                mainPanel.Controls.Add(trainingForm.areasForm.AreasContent);
             }
             
         }
 
         private void BtnNext_Click(object sender, EventArgs e)
         {
-            if (mainPanel.Controls.Contains(areasForm.AreasContent))
+            if (mainPanel.Controls.Contains(trainingForm.areasForm.AreasContent))
             {
-                /*if ()
+                if (trainingForm.areasForm.back == false && trainingForm.areasForm.arm == false && trainingForm.areasForm.shoulder == false && trainingForm.areasForm.chest == false && trainingForm.areasForm.abs == false && trainingForm.areasForm.butt == false && trainingForm.areasForm.leg == false)
                 {
-
-                }else
-                {*/
-                    mainPanel.Controls.Remove(areasForm.AreasContent);
+                    MessageBox.Show("Please Select An Muscle Area");
+                }
+                else
+                {
+                    mainPanel.Controls.Remove(trainingForm.areasForm.AreasContent);
+                    //areasForm.AreasContent.Dispose();
                     mainPanel.Controls.Add(bmiForm.BmiContent);
                     bmiForm.BmiPanel.FillColor = Color.FromArgb(153, 255, 255, 255);
-                //}
+                }
             }
             else {
+                
                 timer1.Start();
                 loadingScr.Visible = true;
             }

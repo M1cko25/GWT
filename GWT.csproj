@@ -339,6 +339,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkoutRoutine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkoutRoutine.Designer.cs">
+      <DependentUpon>WorkoutRoutine.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.cs" />
     <Compile Include="signUpForm.cs">
       <SubType>Form</SubType>
@@ -346,7 +357,7 @@
     <Compile Include="signUpForm.Designer.cs">
       <DependentUpon>signUpForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="status.cs" />
+    <Compile Include="Stacks.cs" />
     <Compile Include="TrainingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -354,6 +365,31 @@
       <DependentUpon>TrainingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="WorkingOutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingOutForm.Designer.cs">
+      <DependentUpon>WorkingOutForm.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\renegadeRowsgifGWT.gif" />
+    <None Include="Resources\renegadeRowsimgGWT.png" />
+    <None Include="Resources\seatedCableRowsgifGWT.gif" />
+    <None Include="Resources\seatedCableRowsimgGWT.png" />
+    <None Include="Resources\PullUpsgifGWT.gif" />
+    <None Include="Resources\PullUpsimgGWT.png" />
+    <None Include="Resources\ReverseCrunchGwt.png" />
+    <None Include="Resources\ReverseCrunchGWT.gif" />
+    <None Include="Resources\Reverse_crunchGWT.gif" />
+    <None Include="Resources\Refresh.png" />
+    <EmbeddedResource Include="WorkoutRoutine.resx">
+      <DependentUpon>WorkoutRoutine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingOutForm.resx">
+      <DependentUpon>WorkingOutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\settingIconGWT.png" />
+    <None Include="Resources\userIconGWT.png" />
+    <None Include="Resources\reportIconGWT.png" />
     <EmbeddedResource Include="Areas.resx">
       <DependentUpon>Areas.cs</DependentUpon>
     </EmbeddedResource>
@@ -368,14 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="signUpForm.resx">
       <DependentUpon>signUpForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -400,9 +431,37 @@
     <None Include="Resources\carbon_next-outline.png" />
     <None Include="Resources\mingcute_back-fill.png" />
     <None Include="Resources\carbon_next-outline1.png" />
-    <None Include="Resources\loadingAnimationGWT.gif" />
     <None Include="Resources\loadingAnimationGWT1.gif" />
     <None Include="Resources\loadingAnimationGWT2.gif" />
+    <None Include="Resources\dumbbellIconGwt.png" />
+    <None Include="Resources\blockIconGWT.png" />
+    <EmbeddedResource Include="Resources\muscleAbsGWT.png" />
+    <None Include="Resources\latPullDownimgGWT.png" />
+    <None Include="Resources\deadHangimgGWT.png" />
+    <None Include="Resources\BentOverRowsimgGWT.png" />
+    <None Include="Resources\plankimgGWT.png" />
+    <None Include="Resources\oneArmDumbbellRowgifGWT.gif" />
+    <None Include="Resources\deadHanggifGWT.gif" />
+    <None Include="Resources\latPullDowngifGWT.gif" />
+    <None Include="Resources\plankgifGWT.gif" />
+    <None Include="Resources\BentOverRowsgifGWT.gif" />
+    <None Include="Resources\oneArmDumbbellRowimgGWT.png" />
+    <None Include="Resources\muscleBackpart.png" />
+    <None Include="Resources\muscleChestGWT.png" />
+    <None Include="Resources\muscleButtGWT.png" />
+    <None Include="Resources\muscleArmGWT.png" />
+    <None Include="Resources\muscleLegGWT.png" />
+    <None Include="Resources\muscleShoulderGWT.png" />
+    <None Include="Resources\chestBellRowimgGWT.png" />
+    <None Include="Resources\barbellRowimgGWT.png" />
+    <None Include="Resources\deadliftimgGWT.png" />
+    <None Include="Resources\farmersWalkimgGWT.png" />
+    <None Include="Resources\bandLatPulldownimgGWT.png" />
+    <None Include="Resources\barbellRowgifGWT.gif" />
+    <None Include="Resources\chestBellRowgifGWT.gif" />
+    <None Include="Resources\bandLatPulldowngifGWT.gif" />
+    <None Include="Resources\farmersWalkgifGWT.gif" />
+    <None Include="Resources\deadliftgifGWT.gif" />
     <Content Include="Resources\Poppins-Bold.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -433,12 +492,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 9.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 9.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eye open.png" />

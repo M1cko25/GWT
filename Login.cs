@@ -18,6 +18,8 @@ namespace GWT
         private string connstring = "Server=127.0.0.1;Database=gwt_db;username=root";
         private signUpForm signUp = new signUpForm();
         private LandingForm landing = new LandingForm();
+        public TrainingForm trainingForm = new TrainingForm();
+        private Areas areasForm = new Areas();
         public Login()
         {
             InitializeComponent();
@@ -97,15 +99,36 @@ namespace GWT
 
                     if (reader.Read())
                     {
+
+
+                        trainingForm.username = user;
+                        trainingForm.isLoggedIn = true;
                         timer.Start();
                         loading.Visible = true;
                     } else
                     {
                         MessageBox.Show("Wrong username or password");
                     }
-                } catch (Exception ex)
+                } catch (MySqlException ex)
                 {
-                    MessageBox.Show("Error: " + ex);
+                    
+                    switch (ex.Number)
+                    {
+                        case 0:
+                            MessageBox.Show("Cannot connect to server. Contact administrator.");
+                            break;
+                        case 1042:
+                            MessageBox.Show("Can't connect To server");
+                            break;
+                        default:
+                            MessageBox.Show($"MySQL error number: {ex.Number}. Message: {ex.Message}");
+                            break;
+                    }
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
                 }
             }
         }
@@ -124,7 +147,7 @@ namespace GWT
         {
             loading.Visible = false;
             this.Hide();
-            landing.Show();
+            trainingForm.Show();
             timer.Stop();
         }
 
@@ -147,6 +170,7 @@ namespace GWT
 
         private void skipLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            landing.trainingForm.username = "ME";
             this.Hide();
             landing.Show();
         }

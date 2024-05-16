@@ -74,7 +74,7 @@ namespace GWT
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
             this.transition.SetDecoration(this.guna2ImageButton1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Image = global::GWT.Properties.Resources.closeBtn;
+            //this.guna2ImageButton1.Image = global::GWT.Properties.Resources.closeBtn;
             this.guna2ImageButton1.Location = new System.Drawing.Point(1054, 7);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
@@ -123,7 +123,7 @@ namespace GWT
             this.transition.SetDecoration(this.BtnNext, Guna.UI2.AnimatorNS.DecorationType.None);
             this.BtnNext.HoverState.ImageSize = new System.Drawing.Size(48, 48);
             this.BtnNext.HoverState.Parent = this.BtnNext;
-            this.BtnNext.Image = global::GWT.Properties.Resources.carbon_next_outline;
+            //this.BtnNext.Image = global::GWT.Properties.Resources.carbon_next_outline;
             this.BtnNext.ImageSize = new System.Drawing.Size(48, 48);
             this.BtnNext.Location = new System.Drawing.Point(1042, 504);
             this.BtnNext.Name = "BtnNext";
@@ -141,7 +141,7 @@ namespace GWT
             this.transition.SetDecoration(this.BtnBack, Guna.UI2.AnimatorNS.DecorationType.None);
             this.BtnBack.HoverState.ImageSize = new System.Drawing.Size(48, 48);
             this.BtnBack.HoverState.Parent = this.BtnBack;
-            this.BtnBack.Image = global::GWT.Properties.Resources.mingcute_back_fill;
+            //this.BtnBack.Image = global::GWT.Properties.Resources.mingcute_back_fill;
             this.BtnBack.ImageSize = new System.Drawing.Size(48, 48);
             this.BtnBack.Location = new System.Drawing.Point(23, 504);
             this.BtnBack.Name = "BtnBack";
@@ -160,7 +160,7 @@ namespace GWT
             this.transition.SetDecoration(this.femaleBtn, Guna.UI2.AnimatorNS.DecorationType.None);
             this.femaleBtn.HoverState.ImageSize = new System.Drawing.Size(260, 419);
             this.femaleBtn.HoverState.Parent = this.femaleBtn;
-            this.femaleBtn.Image = global::GWT.Properties.Resources.femaleGWT;
+            //this.femaleBtn.Image = global::GWT.Properties.Resources.femaleGWT;
             this.femaleBtn.ImageSize = new System.Drawing.Size(260, 419);
             this.femaleBtn.Location = new System.Drawing.Point(656, 153);
             this.femaleBtn.Name = "femaleBtn";
@@ -178,7 +178,7 @@ namespace GWT
             this.transition.SetDecoration(this.maleBtn, Guna.UI2.AnimatorNS.DecorationType.None);
             this.maleBtn.HoverState.ImageSize = new System.Drawing.Size(260, 419);
             this.maleBtn.HoverState.Parent = this.maleBtn;
-            this.maleBtn.Image = global::GWT.Properties.Resources.maleGWT;
+            //this.maleBtn.Image = global::GWT.Properties.Resources.maleGWT;
             this.maleBtn.ImageSize = new System.Drawing.Size(260, 419);
             this.maleBtn.Location = new System.Drawing.Point(205, 153);
             this.maleBtn.Name = "maleBtn";
@@ -243,7 +243,7 @@ namespace GWT
             // 
             this.loadingScr.BackColor = System.Drawing.Color.Transparent;
             this.transition.SetDecoration(this.loadingScr, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.loadingScr.Image = global::GWT.Properties.Resources.loadingAnimationGWT2;
+            //this.loadingScr.Image = global::GWT.Properties.Resources.loadingAnimationGWT2;
             this.loadingScr.Location = new System.Drawing.Point(1150, 0);
             this.loadingScr.Name = "loadingScr";
             this.loadingScr.Size = new System.Drawing.Size(1102, 611);
@@ -262,7 +262,7 @@ namespace GWT
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
-            this.BackgroundImage = global::GWT.Properties.Resources.blurred_bg;
+            //this.BackgroundImage = global::GWT.Properties.Resources.blurred_bg;
             this.ClientSize = new System.Drawing.Size(1102, 612);
             this.Controls.Add(this.loadingScr);
             this.Controls.Add(this.mainPanel);
