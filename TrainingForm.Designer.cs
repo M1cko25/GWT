@@ -56,6 +56,7 @@ namespace GWT
             this.label2 = new System.Windows.Forms.Label();
             this.startBtn = new Guna.UI2.WinForms.Guna2Button();
             this.ContentsPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.nextSetBtn = new Guna.UI2.WinForms.Guna2Button();
             this.regenBtn = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.NavPanel.SuspendLayout();
@@ -395,11 +396,13 @@ namespace GWT
             this.startBtn.Size = new System.Drawing.Size(273, 56);
             this.startBtn.TabIndex = 5;
             this.startBtn.Text = "START";
+            this.startBtn.Visible = false;
             this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
             // ContentsPanel
             // 
             this.ContentsPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ContentsPanel.Controls.Add(this.nextSetBtn);
             this.ContentsPanel.Controls.Add(this.startBtn);
             this.ContentsPanel.Controls.Add(this.regenBtn);
             this.ContentsPanel.Controls.Add(this.mainPanel);
@@ -410,6 +413,25 @@ namespace GWT
             this.ContentsPanel.Size = new System.Drawing.Size(1098, 567);
             this.ContentsPanel.TabIndex = 5;
             this.ContentsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentsPanel_Paint);
+            // 
+            // nextSetBtn
+            // 
+            this.nextSetBtn.BorderRadius = 20;
+            this.nextSetBtn.CheckedState.Parent = this.nextSetBtn;
+            this.nextSetBtn.CustomImages.Parent = this.nextSetBtn;
+            this.nextSetBtn.Enabled = false;
+            this.nextSetBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(105)))), ((int)(((byte)(114)))));
+            this.nextSetBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextSetBtn.ForeColor = System.Drawing.Color.White;
+            this.nextSetBtn.HoverState.Parent = this.nextSetBtn;
+            this.nextSetBtn.Location = new System.Drawing.Point(1151, 471);
+            this.nextSetBtn.Name = "nextSetBtn";
+            this.nextSetBtn.ShadowDecoration.Parent = this.nextSetBtn;
+            this.nextSetBtn.Size = new System.Drawing.Size(238, 64);
+            this.nextSetBtn.TabIndex = 3;
+            this.nextSetBtn.Text = "NEXT";
+            this.nextSetBtn.Visible = false;
+            this.nextSetBtn.Click += new System.EventHandler(this.nextSetBtn_Click);
             // 
             // regenBtn
             // 
@@ -466,7 +488,6 @@ namespace GWT
         private System.Windows.Forms.Label usernameLbl;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
@@ -486,5 +507,7 @@ namespace GWT
         private Guna.UI2.WinForms.Guna2ImageButton backBtn;
         private Guna.UI2.WinForms.Guna2Button regenBtn;
         private Guna.UI2.WinForms.Guna2Button startBtn;
+        private Guna.UI2.WinForms.Guna2Button nextSetBtn;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
     }
 }

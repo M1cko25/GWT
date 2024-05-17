@@ -62,7 +62,6 @@ namespace GWT
             this.BmiContent.ShadowDecoration.Parent = this.BmiContent;
             this.BmiContent.Size = new System.Drawing.Size(1099, 577);
             this.BmiContent.TabIndex = 1;
-            this.BmiContent.Paint += new System.Windows.Forms.PaintEventHandler(this.BmiContent_Paint);
             // 
             // BmiPanel
             // 

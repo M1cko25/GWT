@@ -17,5 +17,10 @@ namespace GWT
         {
             InitializeComponent();
         }
+
+        private void guna2CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

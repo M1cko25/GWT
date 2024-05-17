@@ -16,11 +16,6 @@ namespace GWT
             BmiPanel.FillColor = Color.FromArgb(153, 255, 255, 255);
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-            this.Controls.Remove(BmiContent);
-        }
-
         private void ftBtn_Click(object sender, EventArgs e)
         {
             measureToggle(ftBtn, cmBtn);
@@ -101,9 +96,6 @@ namespace GWT
             e.Handled = true;
         }
 
-        private void BmiContent_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
     }
 }
