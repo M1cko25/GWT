@@ -65,6 +65,7 @@ namespace GWT
             this.AreasContent.ShadowDecoration.Parent = this.AreasContent;
             this.AreasContent.Size = new System.Drawing.Size(1099, 577);
             this.AreasContent.TabIndex = 0;
+            this.AreasContent.Paint += new System.Windows.Forms.PaintEventHandler(this.AreasContent_Paint);
             // 
             // fullBodyBtn
             // 

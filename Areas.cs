@@ -28,6 +28,7 @@ namespace GWT
         {
             btntoggle(backBtn);
         }
+
         private void shouderBtn_Click(object sender, EventArgs e)
         {
             btntoggle(shouderBtn);
@@ -112,6 +113,11 @@ namespace GWT
             {
                 fullBodyBtn.FillColor = uncheckedColor;
             }
+        }
+
+        private void AreasContent_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
