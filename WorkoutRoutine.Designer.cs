@@ -42,6 +42,11 @@ namespace GWT
             this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.exerciseGif = new Guna.UI2.WinForms.Guna2PictureBox();
             this.routineLbl = new System.Windows.Forms.Label();
+            this.HourLbl = new System.Windows.Forms.Label();
+            this.MinuteLbl = new System.Windows.Forms.Label();
+            this.SecondLbl = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.RoutMainPanel.SuspendLayout();
             this.routContentPanel.SuspendLayout();
             this.setPanel.SuspendLayout();
@@ -56,6 +61,11 @@ namespace GWT
             // RoutMainPanel
             // 
             this.RoutMainPanel.BackColor = System.Drawing.Color.Transparent;
+            this.RoutMainPanel.Controls.Add(this.label3);
+            this.RoutMainPanel.Controls.Add(this.SecondLbl);
+            this.RoutMainPanel.Controls.Add(this.label5);
+            this.RoutMainPanel.Controls.Add(this.MinuteLbl);
+            this.RoutMainPanel.Controls.Add(this.HourLbl);
             this.RoutMainPanel.Controls.Add(this.routContentPanel);
             this.RoutMainPanel.Controls.Add(this.routineLbl);
             this.RoutMainPanel.Location = new System.Drawing.Point(0, 0);
@@ -185,6 +195,61 @@ namespace GWT
             this.routineLbl.TabIndex = 4;
             this.routineLbl.Text = "ABS WORKOUT";
             // 
+            // HourLbl
+            // 
+            this.HourLbl.AutoSize = true;
+            this.HourLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HourLbl.ForeColor = System.Drawing.Color.White;
+            this.HourLbl.Location = new System.Drawing.Point(916, 37);
+            this.HourLbl.Name = "HourLbl";
+            this.HourLbl.Size = new System.Drawing.Size(22, 17);
+            this.HourLbl.TabIndex = 10;
+            this.HourLbl.Text = "00";
+            // 
+            // MinuteLbl
+            // 
+            this.MinuteLbl.AutoSize = true;
+            this.MinuteLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinuteLbl.ForeColor = System.Drawing.Color.White;
+            this.MinuteLbl.Location = new System.Drawing.Point(961, 37);
+            this.MinuteLbl.Name = "MinuteLbl";
+            this.MinuteLbl.Size = new System.Drawing.Size(22, 17);
+            this.MinuteLbl.TabIndex = 11;
+            this.MinuteLbl.Text = "00";
+            // 
+            // SecondLbl
+            // 
+            this.SecondLbl.AutoSize = true;
+            this.SecondLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondLbl.ForeColor = System.Drawing.Color.White;
+            this.SecondLbl.Location = new System.Drawing.Point(1006, 37);
+            this.SecondLbl.Name = "SecondLbl";
+            this.SecondLbl.Size = new System.Drawing.Size(22, 17);
+            this.SecondLbl.TabIndex = 16;
+            this.SecondLbl.Text = "00";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(989, 37);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(11, 17);
+            this.label3.TabIndex = 17;
+            this.label3.Text = ":";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(944, 37);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(11, 17);
+            this.label5.TabIndex = 14;
+            this.label5.Text = ":";
+            // 
             // WorkoutRoutine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -220,5 +285,10 @@ namespace GWT
         public Guna.UI2.WinForms.Guna2Panel setPanel;
         public System.Windows.Forms.Label ExerciseName;
         public Guna.UI2.WinForms.Guna2Panel routContentPanel;
+        public System.Windows.Forms.Label SecondLbl;
+        public System.Windows.Forms.Label MinuteLbl;
+        public System.Windows.Forms.Label HourLbl;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }

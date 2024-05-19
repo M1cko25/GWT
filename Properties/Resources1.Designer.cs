@@ -633,6 +633,16 @@ namespace GWT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Done {
+            get {
+                object obj = ResourceManager.GetObject("Done", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Dragon_FlaggifGWT {
             get {
                 object obj = ResourceManager.GetObject("Dragon_FlaggifGWT", resourceCulture);
@@ -903,6 +913,26 @@ namespace GWT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Edit {
+            get {
+                object obj = ResourceManager.GetObject("Edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Edit__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Edit (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eye_closed {
             get {
                 object obj = ResourceManager.GetObject("eye closed", resourceCulture);
@@ -976,6 +1006,16 @@ namespace GWT.Properties {
         internal static System.Drawing.Bitmap Group_91 {
             get {
                 object obj = ResourceManager.GetObject("Group 91", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GwtLogo_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("GwtLogo-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1253,6 +1293,36 @@ namespace GWT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logout_Rounded_Left {
+            get {
+                object obj = ResourceManager.GetObject("Logout Rounded Left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logout_Rounded_Left__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Logout Rounded Left (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logout_Rounded_Left1 {
+            get {
+                object obj = ResourceManager.GetObject("Logout Rounded Left1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Low_Cable_CrossovergifGWT {
             get {
                 object obj = ResourceManager.GetObject("Low_Cable_CrossovergifGWT", resourceCulture);
@@ -1313,6 +1383,16 @@ namespace GWT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MacOS_Minimize {
+            get {
+                object obj = ResourceManager.GetObject("MacOS Minimize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maleGWT {
             get {
                 object obj = ResourceManager.GetObject("maleGWT", resourceCulture);
@@ -1366,6 +1446,46 @@ namespace GWT.Properties {
         internal static System.Drawing.Bitmap mingcute_back_fill {
             get {
                 object obj = ResourceManager.GetObject("mingcute_back-fill", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimizeRed {
+            get {
+                object obj = ResourceManager.GetObject("minimizeRed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MJL_CombinationMark {
+            get {
+                object obj = ResourceManager.GetObject("MJL_CombinationMark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MJL_CombinationMark_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("MJL_CombinationMark-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MJL_CombinationMark_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("MJL_CombinationMark-removebg-preview1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1693,6 +1813,16 @@ namespace GWT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Replace {
+            get {
+                object obj = ResourceManager.GetObject("Replace", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reportIconGWT {
             get {
                 object obj = ResourceManager.GetObject("reportIconGWT", resourceCulture);
@@ -1886,6 +2016,16 @@ namespace GWT.Properties {
         internal static System.Drawing.Bitmap Side_Lying_ClamimgGWT {
             get {
                 object obj = ResourceManager.GetObject("Side_Lying_ClamimgGWT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sign_Up {
+            get {
+                object obj = ResourceManager.GetObject("Sign Up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

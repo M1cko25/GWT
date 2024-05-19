@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data;
@@ -27,6 +28,9 @@ namespace GWT
 
         private WorkingOutForm workForm = new WorkingOutForm();
         private WorkoutRoutine routineForm = new WorkoutRoutine();
+        private WorkoutReport reportForm = new WorkoutReport();
+        private UserProfile profileForm = new UserProfile();
+        
         public string username
         {
             get { return user_name; }
@@ -37,7 +41,11 @@ namespace GWT
             }
         }
         public string gender { get; set; }
-        public string Bmi { get; set; }
+        public double userHeight { get; set; }
+        public double userWeight { get; set; }
+        public string bodyType { get; set; }
+        public int userId;
+        public double bmi { get; set; }
         public Areas areasForm = new Areas();
         private BMI bmiForms = new BMI();
 
@@ -52,11 +60,16 @@ namespace GWT
         private int[] indexes = { 0, 1, 2, 3, 4, 5 };
         int index = 1;
 
+        public int back, shoulder, arm, chest, abs, butt, leg;
+
+        bool isWorkingOut = false;
+        int TimeMs, TimeS, TimeM, TimeH;
+        int workoutTotal, workoutMinutes, workoutDays, workoutToday = 0;
+
         Guna.UI2.WinForms.Guna2CheckBox checkbox1 = new Guna.UI2.WinForms.Guna2CheckBox();
         Guna.UI2.WinForms.Guna2CheckBox checkbox2 = new Guna.UI2.WinForms.Guna2CheckBox();
         Guna.UI2.WinForms.Guna2CheckBox checkbox3 = new Guna.UI2.WinForms.Guna2CheckBox();
         Guna.UI2.WinForms.Guna2CheckBox checkbox4 = new Guna.UI2.WinForms.Guna2CheckBox();
-        private bool check1 = false, check2 = false, check3 = false, check4 = false;
 
         bool isBack = false, isShoulder = false, isArm = false, isChest = false, isAbs = false, isButt = false, isLeg = false;
         public TrainingForm()
@@ -64,125 +77,263 @@ namespace GWT
             InitializeComponent();
         }
 
+        public static string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                foreach (byte b in bytes)
+                {
+                    builder.Append(b.ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
         
+        private void timeTo0()
+        {
+            TimeMs = 0;
+            TimeS = 0;
+            TimeM = 0;
+            TimeH = 0;
+        }
         
         private void TrainingForm_Load(object sender, EventArgs e)
         {
-            Label TrainingLbl = new Label();
-            TrainingLbl.AutoSize = true;
-            TrainingLbl.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            TrainingLbl.ForeColor = System.Drawing.Color.White;
-            TrainingLbl.Location = new System.Drawing.Point(18, 0);
-            TrainingLbl.Name = "TrainingLbl";
-            TrainingLbl.Size = new System.Drawing.Size(176, 45);
-            TrainingLbl.TabIndex = 1;
-            TrainingLbl.Text = "TRAINING";
             mainPanel.Controls.Clear();
-            mainPanel.Controls.Add(TrainingLbl);
-            
-            if (isLoggedIn == false)
+            if (!isLoggedIn)
             {
                 int setByGender = (gender == "Male") ? 4 : 3;
-                Image absMuscleDiag = global::GWT.Properties.Resources.muscleAbsGWT;
-                if (areasForm.back == true)
+                int exerNumByBmi = 6;
+                if (bodyType == "Under Weight")
                 {
-                    setPanel("Back Workout", 6, "Reverse Crunch", setByGender, "8", "Bicycle Crunch", setByGender, "8", "Plank", setByGender, "00:30", absMuscleDiag, viewAll_LinkClicked);
+                    exerNumByBmi = 5;
                 }
-                
+                else if (bodyType == "Healthy")
+                {
+                    exerNumByBmi = 6;
+                }
+                else if (bodyType == "Over Weight")
+                {
+                    exerNumByBmi = 7;
+                }
+                Image absMuscleDiag = global::GWT.Properties.Resources.muscleAbsGWT;
+                Image backMuscleDiag = global::GWT.Properties.Resources.muscleBackGWT;
+                Image chestMuscleDiag = global::GWT.Properties.Resources.muscleChestGWT;
+                Image armMuscleDiag = global::GWT.Properties.Resources.muscleArmGWT;
+                Image shoulderMuscleDiag = global::GWT.Properties.Resources.muscleShoulderGWT;
+                Image buttMuscleDiag = global::GWT.Properties.Resources.muscleButtGWT;
+                Image legMuscleDiag = global::GWT.Properties.Resources.muscleLegGWT;
+
+                if (back == 1)
+                {
+                    setPanel("Back Workout", exerNumByBmi, backExercises.BackName[indexes[0]], setByGender, backExercises.BackReps[indexes[0]], backExercises.BackName[indexes[1]], setByGender, backExercises.BackReps[indexes[1]], backExercises.BackName[indexes[2]], setByGender, backExercises.BackReps[indexes[2]], backMuscleDiag, viewAll_LinkClicked);
+                }
+                if (shoulder == 1)
+                {
+                    setPanel("Shoulder Workout", exerNumByBmi, shoulderExercises.ShoulderName[indexes[0]], setByGender, shoulderExercises.ShoulderReps[indexes[0]], shoulderExercises.ShoulderName[indexes[1]], setByGender, shoulderExercises.ShoulderReps[indexes[1]], shoulderExercises.ShoulderName[indexes[2]], setByGender, shoulderExercises.ShoulderReps[indexes[2]], shoulderMuscleDiag, viewAll2_LinkClicked);
+                }
+                if (arm == 1)
+                {
+                    setPanel("Arm Workout", exerNumByBmi, armExercises.ArmName[indexes[0]], setByGender, armExercises.ArmReps[indexes[0]], armExercises.ArmName[indexes[1]], setByGender, armExercises.ArmReps[indexes[1]], armExercises.ArmName[indexes[2]], setByGender, armExercises.ArmReps[indexes[2]], armMuscleDiag, viewAll3_LinkClicked);
+                }
+                if (chest == 1)
+                {
+                    setPanel("Chest Workout", exerNumByBmi, chestExercises.ChestName[indexes[0]], setByGender, chestExercises.ChestReps[indexes[0]], chestExercises.ChestName[indexes[1]], setByGender, chestExercises.ChestReps[indexes[1]], chestExercises.ChestName[indexes[2]], setByGender, chestExercises.ChestReps[indexes[2]], chestMuscleDiag, viewAll4_LinkClicked);
+                }
+                if (abs == 1)
+                {
+                    setPanel("Abs Workout", exerNumByBmi, absExercises.AbsName[indexes[0]], setByGender, absExercises.AbstReps[indexes[0]], absExercises.AbsName[indexes[1]], setByGender, absExercises.AbstReps[indexes[1]], absExercises.AbsName[indexes[2]], setByGender, absExercises.AbstReps[indexes[2]], absMuscleDiag, viewAll5_LinkClicked);
+                }
+                if (butt == 1)
+                {
+                    setPanel("Butt Workout", exerNumByBmi, buttExercises.ButtName[indexes[0]], setByGender, buttExercises.ButtReps[indexes[0]], buttExercises.ButtName[indexes[1]], setByGender, buttExercises.ButtReps[indexes[1]], buttExercises.ButtName[indexes[2]], setByGender, buttExercises.ButtReps[indexes[2]], buttMuscleDiag, viewAll6_LinkClicked);
+                }
+                if (leg == 1)
+                {
+                    setPanel("Leg Workout", exerNumByBmi, legExercises.LegName[indexes[0]], setByGender, legExercises.LegReps[indexes[0]], legExercises.LegName[indexes[1]], setByGender, legExercises.LegReps[indexes[1]], legExercises.LegName[indexes[2]], setByGender, legExercises.LegReps[indexes[2]], legMuscleDiag, viewAll7_LinkClicked);
+                }
+
+                reportForm.historyContent.Controls.Clear();
+               
+
             } else
             {
-                MySqlConnection conn = new MySqlConnection(connstring);
-                conn.Open();
-                string qry = "SELECT `username`, `gender`, `id`, `bmi` FROM `users` WHERE username = @Username";
-                MySqlCommand cmd = new MySqlCommand(qry, conn);
-                cmd.Parameters.AddWithValue("@Username", user_name);
+                getAreasFocused();
+                MySqlConnection con = new MySqlConnection(connstring);
+                con.Open();
+                string qry = "SELECT * FROM `report` WHERE id = @userId";
+                MySqlCommand cmd = new MySqlCommand(qry, con);
+                cmd.Parameters.AddWithValue("@userId", userId);
                 MySqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    gender = reader.GetString("gender");
-                    int userId = reader.GetInt32("id");
-                    Bmi = reader.GetString("bmi");
-                    MySqlConnection connect = new MySqlConnection(connstring);
-                    connect.Open();
-                    string query = "SELECT * FROM `areasfocused` WHERE userId = @userId";
-                    MySqlCommand command = new MySqlCommand(query, connect);
-                    command.Parameters.AddWithValue("@userId", userId);
-                    MySqlDataReader reader2 = command.ExecuteReader();
-                    if (reader2.Read())
-                    {
-                        int back = reader2.GetInt32("back");
-                        int shoulder = reader2.GetInt32("shoulder");
-                        int arm = reader2.GetInt32("arm");
-                        int chest = reader2.GetInt32("chest");
-                        int abs = reader2.GetInt32("abs");
-                        int butt = reader2.GetInt32("butt");
-                        int leg = reader2.GetInt32("leg");
-                        int setByGender = (gender == "Male") ? 4 : 3;
-                        int exerNumByBmi = 6;
-                        if (Bmi == "Under Weight")
-                        {
-                            exerNumByBmi = 5;
-                        } else if (Bmi == "Healthy") {
-                            exerNumByBmi = 6;
-                        } else if (Bmi == "Over Weight") {
-                            exerNumByBmi = 7;
-                        }
-                        
-                        
-                        Image absMuscleDiag = global::GWT.Properties.Resources.muscleAbsGWT;
-                        Image backMuscleDiag = global::GWT.Properties.Resources.muscleBackGWT;
-                        Image chestMuscleDiag = global::GWT.Properties.Resources.muscleChestGWT;
-                        Image armMuscleDiag = global::GWT.Properties.Resources.muscleArmGWT;
-                        Image shoulderMuscleDiag = global::GWT.Properties.Resources.muscleShoulderGWT;
-                        Image buttMuscleDiag = global::GWT.Properties.Resources.muscleButtGWT;
-                        Image legMuscleDiag = global::GWT.Properties.Resources.muscleLegGWT;
-
-                        if (back == 1)
-                        {
-                            setPanel("Back Workout", exerNumByBmi, backExercises.BackName[indexes[0]], setByGender, backExercises.BackReps[indexes[0]], backExercises.BackName[indexes[1]], setByGender, backExercises.BackReps[indexes[1]], backExercises.BackName[indexes[2]], setByGender, backExercises.BackReps[indexes[2]], backMuscleDiag, viewAll_LinkClicked);
-                        }
-                        if (shoulder == 1)
-                        {
-                            setPanel("Shoulder Workout", exerNumByBmi, shoulderExercises.ShoulderName[indexes[0]], setByGender, shoulderExercises.ShoulderReps[indexes[0]], shoulderExercises.ShoulderName[indexes[1]], setByGender, shoulderExercises.ShoulderReps[indexes[1]], shoulderExercises.ShoulderName[indexes[2]], setByGender, shoulderExercises.ShoulderReps[indexes[2]], shoulderMuscleDiag, viewAll2_LinkClicked);
-                        }
-                        if (arm == 1)
-                        {
-                            setPanel("Arm Workout", exerNumByBmi, armExercises.ArmName[indexes[0]], setByGender, armExercises.ArmReps[indexes[0]], armExercises.ArmName[indexes[1]], setByGender, armExercises.ArmReps[indexes[1]], armExercises.ArmName[indexes[2]], setByGender, armExercises.ArmReps[indexes[2]], armMuscleDiag, viewAll3_LinkClicked);
-                        }
-                        if (chest == 1)
-                        {
-                            setPanel("Chest Workout", exerNumByBmi, chestExercises.ChestName[indexes[0]], setByGender, chestExercises.ChestReps[indexes[0]], chestExercises.ChestName[indexes[1]], setByGender, chestExercises.ChestReps[indexes[1]], chestExercises.ChestName[indexes[2]], setByGender, chestExercises.ChestReps[indexes[2]], chestMuscleDiag, viewAll4_LinkClicked);
-                        }
-                        if (abs == 1)
-                        {
-                            setPanel("Abs Workout", exerNumByBmi, absExercises.AbsName[indexes[0]], setByGender, absExercises.AbstReps[indexes[0]], absExercises.AbsName[indexes[1]], setByGender, absExercises.AbstReps[indexes[1]], absExercises.AbsName[indexes[2]], setByGender, absExercises.AbstReps[indexes[2]], absMuscleDiag, viewAll5_LinkClicked);
-                        }
-                        if (butt == 1)
-                        {
-                            setPanel("Butt Workout", exerNumByBmi, buttExercises.ButtName[indexes[0]], setByGender, buttExercises.ButtReps[indexes[0]], buttExercises.ButtName[indexes[1]], setByGender, buttExercises.ButtReps[indexes[1]], buttExercises.ButtName[indexes[2]], setByGender, buttExercises.ButtReps[indexes[2 ]], buttMuscleDiag, viewAll6_LinkClicked);
-                        }
-                        if (leg == 1)
-                        {
-                            setPanel("Leg Workout", exerNumByBmi, legExercises.LegName[indexes[0]], setByGender, legExercises.LegReps[indexes[0]], legExercises.LegName[indexes[1]], setByGender, legExercises.LegReps[indexes[1]], legExercises.LegName[indexes[2]], setByGender, legExercises.LegReps[indexes[2]], legMuscleDiag, viewAll7_LinkClicked);
-                        }
-
-                    }
+                    workoutTotal = reader.GetInt32("workout- number");
+                    workoutMinutes = reader.GetInt32("minutes");
+                    workoutDays = reader.GetInt32("day");
                 }
+                con.Close();
+                reportForm.workoutTotal.Text = Convert.ToString(workoutTotal);
+                reportForm.minuteTotal.Text = Convert.ToString(workoutMinutes);
+                reportForm.daysTotal.Text = Convert.ToString(workoutDays);
+                reportForm.Minutes = workoutMinutes;
+                reportForm.workToday.Text = Convert.ToString(workoutToday);
+                reportForm.historyContent.Controls.Clear();
+                MySqlConnection conn = new MySqlConnection(connstring);
+                conn.Open();
+                string query = "SELECT * FROM `history` WHERE id = @userId";
+                MySqlCommand command = new MySqlCommand(query, conn);
+                command.Parameters.AddWithValue("@userId", userId);
+                MySqlDataReader reader2 = command.ExecuteReader();
+                while (reader2.Read())
+                {
+                    FlowLayoutPanel histPanel = new FlowLayoutPanel();
+                    histPanel.Size = new System.Drawing.Size(754, 62);
 
+                    Label dateLbl = new Label();
+                    dateLbl.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    dateLbl.Location = new System.Drawing.Point(3, 0);
+                    dateLbl.Name = "date";
+                    dateLbl.Size = new System.Drawing.Size(145, 62);
+                    dateLbl.TabIndex = 0;
+                    dateLbl.Text = reader2.GetString("date");
+                    dateLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+                    Label workoutLbl = new Label();
+                    workoutLbl.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    workoutLbl.Location = new System.Drawing.Point(154, 0);
+                    workoutLbl.Name = "workout";
+                    workoutLbl.Size = new System.Drawing.Size(456, 62);
+                    workoutLbl.TabIndex = 1;
+                    workoutLbl.Text = reader2.GetString("workout");
+                    workoutLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+                    Label timeLbl = new Label();
+                    timeLbl.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    timeLbl.Location = new System.Drawing.Point(616, 0);
+                    timeLbl.Name = "time";
+                    timeLbl.Size = new System.Drawing.Size(133, 62);
+                    timeLbl.TabIndex = 2;
+                    timeLbl.Text = reader2.GetString("time");
+                    timeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+                    histPanel.Controls.Add(dateLbl);
+                    histPanel.Controls.Add(workoutLbl);
+                    histPanel.Controls.Add(timeLbl);
+                    reportForm.historyContent.Controls.Add(histPanel);
+                }
+                    
             }
-            
+
+            timeTo0();
             backBtn.Location = new Point(20, 60);
             startBtn.Location = new Point(513, 440);
             startBtn.BackColor = Color.FromArgb(156, 255, 255, 255);
             regenBtn.Location = new Point(813, 457);
             nextSetBtn.Location = new Point(651, 471);
             nextSetBtn.BackColor = Color.FromArgb(156, 255, 255, 255);
+            changePassBtn.Location = new Point(343, 294);
+            heightEdit.Location = new Point(580, 227);
+            weightEdit.Location = new Point(920, 228);
+            usernameEdit.Location = new Point(727, 165);
+            signOutBtn.Location = new Point(902, 491);
+            signUpBtn.Location = new Point(313, 487);
         }
         
+        private void getAreasFocused()
+        {
+            MySqlConnection conn = new MySqlConnection(connstring);
+            conn.Open();
+            string qry = "SELECT * FROM `users` WHERE username = @Username";
+            MySqlCommand cmd = new MySqlCommand(qry, conn);
+            cmd.Parameters.AddWithValue("@Username", user_name);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                gender = reader.GetString("gender");
+                userId = reader.GetInt32("id");
+                bodyType = reader.GetString("body-type");
+                userHeight = reader.GetDouble("height");
+                userWeight = reader.GetDouble("weight");
+                bmi = reader.GetDouble("bmi");
+                MySqlConnection connect = new MySqlConnection(connstring);
+                connect.Open();
+                string query = "SELECT * FROM `areasfocused` WHERE userId = @userId";
+                MySqlCommand command = new MySqlCommand(query, connect);
+                command.Parameters.AddWithValue("@userId", userId);
+                MySqlDataReader reader2 = command.ExecuteReader();
+                if (reader2.Read())
+                {
+                    back = reader2.GetInt32("back");
+                    shoulder = reader2.GetInt32("shoulder");
+                    arm = reader2.GetInt32("arm");
+                    chest = reader2.GetInt32("chest");
+                    abs = reader2.GetInt32("abs");
+                    butt = reader2.GetInt32("butt");
+                    leg = reader2.GetInt32("leg");
+                    int setByGender = (gender == "Male") ? 4 : 3;
+                    int exerNumByBmi = 6;
+                    if (bodyType == "Under Weight")
+                    {
+                        exerNumByBmi = 5;
+                    }
+                    else if (bodyType == "Healthy")
+                    {
+                        exerNumByBmi = 6;
+                    }
+                    else if (bodyType == "Over Weight")
+                    {
+                        exerNumByBmi = 7;
+                    }
+
+
+                    Image absMuscleDiag = global::GWT.Properties.Resources.muscleAbsGWT;
+                    Image backMuscleDiag = global::GWT.Properties.Resources.muscleBackGWT;
+                    Image chestMuscleDiag = global::GWT.Properties.Resources.muscleChestGWT;
+                    Image armMuscleDiag = global::GWT.Properties.Resources.muscleArmGWT;
+                    Image shoulderMuscleDiag = global::GWT.Properties.Resources.muscleShoulderGWT;
+                    Image buttMuscleDiag = global::GWT.Properties.Resources.muscleButtGWT;
+                    Image legMuscleDiag = global::GWT.Properties.Resources.muscleLegGWT;
+
+                    if (back == 1)
+                    {
+                        setPanel("Back Workout", exerNumByBmi, backExercises.BackName[indexes[0]], setByGender, backExercises.BackReps[indexes[0]], backExercises.BackName[indexes[1]], setByGender, backExercises.BackReps[indexes[1]], backExercises.BackName[indexes[2]], setByGender, backExercises.BackReps[indexes[2]], backMuscleDiag, viewAll_LinkClicked);
+                    }
+                    if (shoulder == 1)
+                    {
+                        setPanel("Shoulder Workout", exerNumByBmi, shoulderExercises.ShoulderName[indexes[0]], setByGender, shoulderExercises.ShoulderReps[indexes[0]], shoulderExercises.ShoulderName[indexes[1]], setByGender, shoulderExercises.ShoulderReps[indexes[1]], shoulderExercises.ShoulderName[indexes[2]], setByGender, shoulderExercises.ShoulderReps[indexes[2]], shoulderMuscleDiag, viewAll2_LinkClicked);
+                    }
+                    if (arm == 1)
+                    {
+                        setPanel("Arm Workout", exerNumByBmi, armExercises.ArmName[indexes[0]], setByGender, armExercises.ArmReps[indexes[0]], armExercises.ArmName[indexes[1]], setByGender, armExercises.ArmReps[indexes[1]], armExercises.ArmName[indexes[2]], setByGender, armExercises.ArmReps[indexes[2]], armMuscleDiag, viewAll3_LinkClicked);
+                    }
+                    if (chest == 1)
+                    {
+                        setPanel("Chest Workout", exerNumByBmi, chestExercises.ChestName[indexes[0]], setByGender, chestExercises.ChestReps[indexes[0]], chestExercises.ChestName[indexes[1]], setByGender, chestExercises.ChestReps[indexes[1]], chestExercises.ChestName[indexes[2]], setByGender, chestExercises.ChestReps[indexes[2]], chestMuscleDiag, viewAll4_LinkClicked);
+                    }
+                    if (abs == 1)
+                    {
+                        setPanel("Abs Workout", exerNumByBmi, absExercises.AbsName[indexes[0]], setByGender, absExercises.AbstReps[indexes[0]], absExercises.AbsName[indexes[1]], setByGender, absExercises.AbstReps[indexes[1]], absExercises.AbsName[indexes[2]], setByGender, absExercises.AbstReps[indexes[2]], absMuscleDiag, viewAll5_LinkClicked);
+                    }
+                    if (butt == 1)
+                    {
+                        setPanel("Butt Workout", exerNumByBmi, buttExercises.ButtName[indexes[0]], setByGender, buttExercises.ButtReps[indexes[0]], buttExercises.ButtName[indexes[1]], setByGender, buttExercises.ButtReps[indexes[1]], buttExercises.ButtName[indexes[2]], setByGender, buttExercises.ButtReps[indexes[2]], buttMuscleDiag, viewAll6_LinkClicked);
+                    }
+                    if (leg == 1)
+                    {
+                        setPanel("Leg Workout", exerNumByBmi, legExercises.LegName[indexes[0]], setByGender, legExercises.LegReps[indexes[0]], legExercises.LegName[indexes[1]], setByGender, legExercises.LegReps[indexes[1]], legExercises.LegName[indexes[2]], setByGender, legExercises.LegReps[indexes[2]], legMuscleDiag, viewAll7_LinkClicked);
+                    }
+
+                }
+                connect.Close();
+            }
+            conn.Close();
+        }
         public void displayUsername()
         {
             usernameLbl.Text = user_name.ToUpper();
@@ -196,36 +347,43 @@ namespace GWT
         private void viewAll_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             isBack = true;
+            TitleLbl.Visible = false;
             viewAllFunc(indexes, backExercises.BackName, backExercises.BackImgs, backExercises.BackReps, "Back", global::GWT.Properties.Resources.muscleBackGWT);
         }
         private void viewAll2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             isShoulder = true;
+            TitleLbl.Visible = false;
             viewAllFunc(indexes, shoulderExercises.ShoulderName, shoulderExercises.ShoulderImgs, shoulderExercises.ShoulderReps, "Shoulder", global::GWT.Properties.Resources.muscleShoulderGWT);
         }
         private void viewAll3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             isArm = true;
+            TitleLbl.Visible = false;
             viewAllFunc(indexes, armExercises.ArmName, armExercises.ArmImgs, armExercises.ArmReps, "Arm", global::GWT.Properties.Resources.muscleArmGWT);
         }
         private void viewAll4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             isChest = true;
+            TitleLbl.Visible = false;
             viewAllFunc(indexes, chestExercises.ChestName, chestExercises.ChestImgs, chestExercises.ChestReps, "Chest", global::GWT.Properties.Resources.muscleChestGWT);
         }
         private void viewAll5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             isAbs = true;
+            TitleLbl.Visible = false;
             viewAllFunc(indexes, absExercises.AbsName, absExercises.AbsImgs, absExercises.AbstReps, "Abs", global::GWT.Properties.Resources.muscleAbsGWT);
         }
         private void viewAll6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             isButt = true;
+            TitleLbl.Visible = false;
             viewAllFunc(indexes, buttExercises.ButtName, buttExercises.ButtImgs, buttExercises.ButtReps, "Butt", global::GWT.Properties.Resources.muscleButtGWT);
         }
         private void viewAll7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             isLeg = true;
+            TitleLbl.Visible = false;
             viewAllFunc(indexes, legExercises.LegName, legExercises.LegImgs, legExercises.LegReps, "Leg", global::GWT.Properties.Resources.muscleLegGWT);
         }
 
@@ -363,6 +521,7 @@ namespace GWT
                 backBtn.Visible = false;
                 regenBtn.Visible = false;
                 startBtn.Visible = false;
+                TitleLbl.Visible = true;
                 if (isBack)
                 {
                     isBack = false;
@@ -370,6 +529,7 @@ namespace GWT
                 {
                     isShoulder = false;
                 }
+                
             } else if (ContentsPanel.Controls.Contains(routineForm.RoutMainPanel))
             {
                 
@@ -379,90 +539,244 @@ namespace GWT
                     DialogResult dialog = MessageBox.Show("You want to quit?", "Your Workout Session is not finished yet", MessageBoxButtons.YesNo);
                     if (dialog == DialogResult.Yes)
                     {
+                        isWorkingOut = false;
                         ContentsPanel.Controls.Remove(routineForm.RoutMainPanel);
                         ContentsPanel.Controls.Add(workForm.WorkMainPanel);
                         regenBtn.Visible = true;
                         startBtn.Visible = true;
                         nextSetBtn.Visible = false;
-                        //int gaps = 79;
-                        //int panelsY = 13;
-                        //int checkNum = (gender == "Male") ? 4 : 3;
-                        //int checkTypeNum = 0;
-                        //System.EventHandler[] checkEvents = { check1Changed, check2Changed, check3Changed, check4Changed };
-                        //Guna.UI2.WinForms.Guna2CheckBox[] checkBoxxes = { checkbox1, checkbox2, checkbox3, checkbox4 };
-                        
-                        //if (isBack)
-                        //{
-                        //    routineFormLoad(backExercises.BackGifs[0], backExercises.BackName[0]);
-                        //    for (int i = 1; i <= checkNum; i++)
-                        //    {
-                        //        setCheckMaker(backExercises.BackReps[indexes[0]], panelsY, checkEvents[checkTypeNum], checkBoxxes[checkTypeNum]);
-                        //        panelsY += gaps;
-                        //        checkTypeNum++;
-                        //    }
-                        //}
-                        //else if (isShoulder)
-                        //{
-                        //    routineFormLoad(shoulderExercises.ShoulderGifs[0], shoulderExercises.ShoulderName[0]);
-                        //    for (int i = 1; i <= checkNum; i++)
-                        //    {
-                        //        setCheckMaker(shoulderExercises.ShoulderReps[indexes[0]], panelsY, checkEvents[checkTypeNum], checkBoxxes[checkTypeNum]);
-                        //        panelsY += gaps;
-                        //        checkTypeNum++;
-                        //    }
-                        //}
-                        //else if (isArm)
-                        //{
-                        //    routineFormLoad();
-                        //    for (int i = 1; i <= checkNum; i++)
-                        //    {
-                        //        setCheckMaker(armExercises.ArmReps[indexes[0]], panelsY, checkEvents[checkTypeNum], checkBoxxes[checkTypeNum]);
-                        //        panelsY += gaps;
-                        //        checkTypeNum++;
-                        //    }
-                        //}
-                        //else if (isChest)
-                        //{
-                        //    routineFormLoad();
-                        //    for (int i = 1; i <= checkNum; i++)
-                        //    {
-                        //        setCheckMaker(chestExercises.ChestReps[indexes[0]], panelsY, checkEvents[checkTypeNum], checkBoxxes[checkTypeNum]);
-                        //        panelsY += gaps;
-                        //        checkTypeNum++;
-                        //    }
-                        //}
-                        //else if (isAbs)
-                        //{
-                        //    routineFormLoad();
-                        //    for (int i = 1; i <= checkNum; i++)
-                        //    {
-                        //        setCheckMaker(absExercises.AbstReps[indexes[0]], panelsY, checkEvents[checkTypeNum], checkBoxxes[checkTypeNum]);
-                        //        panelsY += gaps;
-                        //        checkTypeNum++;
-                        //    }
-                        //}
-                        //else if (isButt)
-                        //{
-                        //    routineFormLoad();
-                        //    for (int i = 1; i <= checkNum; i++)
-                        //    {
-                        //        setCheckMaker(buttExercises.ButtReps[indexes[0]], panelsY, checkEvents[checkTypeNum], checkBoxxes[checkTypeNum]);
-                        //        panelsY += gaps;
-                        //        checkTypeNum++;
-                        //    }
-                        //}
-                        //else if (isLeg)
-                        //{
-                        //    routineFormLoad();
-                        //    for (int i = 1; i <= checkNum; i++)
-                        //    {
-                        //        setCheckMaker(legExercises.LegReps[indexes[0]], panelsY, checkEvents[checkTypeNum], checkBoxxes[checkTypeNum]);
-                        //        panelsY += gaps;
-                        //        checkTypeNum++;
-                        //    }
-                        //}
                     } 
                 }
+            }
+        }
+
+        private void btnsForProfileClose()
+        {
+            changePassBtn.Visible = false;
+            usernameEdit.Visible = false;
+            heightEdit.Visible = false;
+            weightEdit.Visible = false;
+            signOutBtn.Visible = false;
+            signUpBtn.Visible = false;
+        }
+
+        private void profileBtn_Click(object sender, EventArgs e)
+        {
+            TitleLbl.Text = "PROFILE";
+            profileBtn.FillColor = Color.FromArgb(226, 105, 114);
+            trainingBtn.FillColor = Color.Transparent;
+            exercisesBtn.FillColor = Color.Transparent;
+            reportBtn.FillColor = Color.Transparent;
+            changePassBtn.Visible = true;
+            usernameEdit.Visible = true;
+            heightEdit.Visible = true;
+            weightEdit.Visible = true;
+            signOutBtn.Visible = true;
+            if (!isLoggedIn)
+            {
+                signUpBtn.Visible = true;
+                signOutBtn.Visible = false;
+                changePassBtn.Visible = false;
+            } 
+            mainPanel.Controls.Clear();
+
+            profileForm.userName.Text = username;
+            profileForm.HeightNum.Text = Convert.ToString(userHeight);
+            profileForm.WeightNum.Text = Convert.ToString(userWeight);
+            profileForm.BmiNum.Text = Convert.ToString(bmi);
+            profileForm.BodyType.Text = bodyType;
+
+            mainPanel.Controls.Add(profileForm.mainPanel);
+        }
+        bool isEditingUsername = false, isEditingHeight = false, isEditingWeight = false;
+
+        private void weightEdit_Click(object sender, EventArgs e)
+        {
+            if (!isEditingWeight)
+            {
+                isEditingWeight = true;
+                profileForm.weightTxt.Text = Convert.ToString(userWeight);
+                profileForm.weightTxt.Visible = true;
+                weightEdit.Image = global::GWT.Properties.Resources.Done;
+            }
+            else
+            {
+                isEditingWeight = false;
+                userWeight = Convert.ToDouble(profileForm.weightTxt.Text);
+                profileForm.WeightNum.Text = Convert.ToString(userWeight);
+                bmi = userWeight / (userHeight * userHeight);
+                if (bmi <= 18.5)
+                {
+                    bodyType = "Under Weight";
+                }
+                else if (bmi >= 18.6 && bmi <= 25)
+                {
+                    bodyType = "Healthy";
+                }
+                else if (bmi > 25)
+                {
+                    bodyType = "Over Weight";
+                }
+                profileForm.BodyType.Text = bodyType;
+                profileForm.BmiNum.Text = bmi.ToString("#.##");
+                MySqlConnection con = new MySqlConnection(connstring);
+                con.Open();
+                string qry = "UPDATE `users` SET `weight`= @weight, `bmi`= @bmi, `body-type` = @bodyType WHERE id = @Id";
+                MySqlCommand cmd = new MySqlCommand(qry, con);
+                cmd.Parameters.AddWithValue("@weight", userWeight);
+                cmd.Parameters.AddWithValue("@bmi", bmi);
+                cmd.Parameters.AddWithValue("@bodyType", bodyType);
+                cmd.Parameters.AddWithValue("Id", userId);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                profileForm.weightTxt.Visible = false;
+                weightEdit.Image = global::GWT.Properties.Resources.Edit__1_;
+            }
+        }
+        bool isChangingPass = false;
+        private void changePassBtn_Click(object sender, EventArgs e)
+        {
+            if (!isChangingPass)
+            {
+                isChangingPass = true;
+                profileForm.changePassPanel.Visible = true;
+            } else
+            {
+                if (string.IsNullOrEmpty(profileForm.currPassTxt.Text) && string.IsNullOrEmpty(profileForm.newPassTxt.Text))
+                {
+                    profileForm.changePassPanel.Visible = false;
+                    isChangingPass = false;
+                } else if (string.IsNullOrEmpty(profileForm.currPassTxt.Text) || string.IsNullOrEmpty(profileForm.newPassTxt.Text))
+                {
+                    MessageBox.Show("Please fill all the fields");
+                } else if (profileForm.newPassTxt.Text.Length < 8)
+                {
+                    MessageBox.Show("Password must be contain atleast 8 characters");
+                } else
+                {
+                    try
+                    {
+                        string newPass = profileForm.newPassTxt.Text;
+                        string currPass = profileForm.currPassTxt.Text;
+                        MySqlConnection con = new MySqlConnection(connstring);
+                        con.Open();
+                        string qry = "UPDATE `users` SET `password` = @pass WHERE id = @Id AND password = @currPass";
+                        MySqlCommand cmd = new MySqlCommand(qry, con);
+                        cmd.Parameters.AddWithValue("@pass", HashPassword(newPass));
+                        cmd.Parameters.AddWithValue("@currPass", HashPassword(currPass));
+                        cmd.Parameters.AddWithValue("Id", userId);
+                        int changed = cmd.ExecuteNonQuery();
+                        if (changed > 0)
+                        {
+                            isChangingPass = false;
+                            profileForm.changePassPanel.Visible = false;
+                        } else
+                        {
+                            MessageBox.Show("Wrong Current Password");
+                        }
+                        
+                    } catch (MySqlException ex)
+                    {
+                        switch (ex.Number)
+                        {
+                            case 0:
+                                MessageBox.Show("Cannot connect to server. Contact administrator.");
+                                break;
+                            case 1042:
+                                MessageBox.Show("Can't connect To server");
+                                break;
+                            default:
+                                MessageBox.Show($"MySQL error number: {ex.Number}. Message: {ex.Message}");
+                                break;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void signOutBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login loginForm = new Login();
+            loginForm.Show();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            signUpForm signUp = new signUpForm();
+            signUp.Show();
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void usernameEdit_Click(object sender, EventArgs e)
+        {
+            if (!isEditingUsername)
+            {
+                isEditingUsername = true;
+                profileForm.userNameTxt.Text = username;
+                profileForm.userNameTxt.Visible = true;
+                usernameEdit.Image = global::GWT.Properties.Resources.Done;
+            } else
+            {
+                isEditingUsername = false;
+                username = profileForm.userNameTxt.Text;
+                profileForm.userName.Text = username;
+                MySqlConnection con = new MySqlConnection(connstring);
+                con.Open();
+                string qry = "UPDATE `users` SET `username`= @userName WHERE id = @Id";
+                MySqlCommand cmd = new MySqlCommand(qry, con);
+                cmd.Parameters.AddWithValue("@userName", username);
+                cmd.Parameters.AddWithValue("Id", userId);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                profileForm.userNameTxt.Visible = false;
+                usernameEdit.Image = global::GWT.Properties.Resources.Edit__1_;
+            }
+        }
+
+        private void heightEdit_Click(object sender, EventArgs e)
+        {
+            if (!isEditingHeight)
+            {
+                isEditingHeight = true;
+                profileForm.heightTxt.Text = Convert.ToString(userHeight);
+                profileForm.heightTxt.Visible = true;
+                heightEdit.Image = global::GWT.Properties.Resources.Done;
+            } else
+            {
+                isEditingHeight = false;
+                userHeight = Convert.ToDouble(profileForm.heightTxt.Text);
+                profileForm.HeightNum.Text = Convert.ToString(userHeight);
+                bmi = userWeight / (userHeight * userHeight);
+                if (bmi <= 18.5)
+                {
+                    bodyType = "Under Weight";
+                } else if (bmi >= 18.6 && bmi <= 25) {
+                    bodyType = "Healthy";
+                } else if (bmi > 25)
+                {
+                    bodyType = "Over Weight";
+                }
+                profileForm.BodyType.Text = bodyType;
+                profileForm.BmiNum.Text = bmi.ToString("#.##");
+                MySqlConnection con = new MySqlConnection(connstring);
+                con.Open();
+                string qry = "UPDATE `users` SET `height`= @height, `bmi` = @bmi, `body-type` = @bodyType WHERE id = @Id";
+                MySqlCommand cmd = new MySqlCommand(qry, con);
+                cmd.Parameters.AddWithValue("@height", userHeight);
+                cmd.Parameters.AddWithValue("@bmi", bmi);
+                cmd.Parameters.AddWithValue("@bodyType", bodyType);
+                cmd.Parameters.AddWithValue("Id", userId);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                
+                profileForm.heightTxt.Visible = false;
+                heightEdit.Image = global::GWT.Properties.Resources.Edit__1_;
             }
         }
 
@@ -529,15 +843,15 @@ namespace GWT
             int panelGaps = 79;
             int indexNum = 0;
             int exerNumByBmi = 6;
-            if (Bmi == "Under Weight")
+            if (bodyType == "Under Weight")
             {
                 exerNumByBmi = 5;
             }
-            else if (Bmi == "Healthy")
+            else if (bodyType == "Healthy")
             {
                 exerNumByBmi = 6;
             }
-            else if (Bmi == "Over Weight")
+            else if (bodyType == "Over Weight")
             {
                 exerNumByBmi = 7;
             }
@@ -600,6 +914,51 @@ namespace GWT
             }
         }
 
+        private void workoutTimer_Tick(object sender, EventArgs e)
+        {
+            if (isWorkingOut)
+            {
+                TimeMs++;
+                if (TimeMs >= 100)
+                {
+                    TimeMs = 0;
+                    TimeS++;
+                    if (TimeS < 10)
+                    {
+                        routineForm.SecondLbl.Text = "0" + Convert.ToString(TimeS);
+                    } else
+                    {
+                        routineForm.SecondLbl.Text = Convert.ToString(TimeS);
+                    }
+                    if (TimeS >= 59)
+                    {
+                        TimeS = 0;
+                        TimeM++;
+                        if (TimeM < 10)
+                        {
+                            routineForm.MinuteLbl.Text = "0" + Convert.ToString(TimeM);
+                        } else
+                        {
+                            routineForm.MinuteLbl.Text = Convert.ToString(TimeM);
+                        }
+                        if (TimeM >= 59)
+                        {
+                            TimeM = 0;
+                            TimeH++;
+                            if (TimeH < 10)
+                            {
+                                routineForm.HourLbl.Text = "0" + Convert.ToString(TimeH);
+                            } else
+                            {
+                                routineForm.HourLbl.Text = Convert.ToString(TimeH);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        
         private int[] RandomIndexer(int min, int max, int count)
         {
             HashSet<int> index = new HashSet<int>();
@@ -617,7 +976,8 @@ namespace GWT
             if (ContentsPanel.Controls.Contains(workForm.WorkMainPanel)) {
                 ContentsPanel.Controls.Remove(workForm.WorkMainPanel);
                 ContentsPanel.Controls.Add(routineForm.RoutMainPanel);
-                
+
+                isWorkingOut = true;
                 int gaps = 79;
                 int panelsY = 13;
                 int checkNum = (gender == "Male") ? 4 : 3;
@@ -695,6 +1055,61 @@ namespace GWT
             
         }
 
+        private void exercisesBtn_Click(object sender, EventArgs e)
+        {
+            TitleLbl.Text = "EXERCISES";
+            y = 81;
+            trainingBtn.FillColor = Color.Transparent;
+            exercisesBtn.FillColor = Color.FromArgb(255, 226, 105, 114);
+            reportBtn.FillColor = Color.Transparent;
+            profileBtn.FillColor = Color.Transparent;
+            btnsForProfileClose();
+            mainPanel.Controls.Clear();
+            int setByGender = (gender == "Male") ? 4 : 3;
+            int exerNumByBmi = 6;
+            if (bodyType == "Under Weight")
+            {
+                exerNumByBmi = 5;
+            }
+            else if (bodyType == "Healthy")
+            {
+                exerNumByBmi = 6;
+            }
+            else if (bodyType == "Over Weight")
+            {
+                exerNumByBmi = 7;
+            }
+            Image absMuscleDiag = global::GWT.Properties.Resources.muscleAbsGWT;
+            Image backMuscleDiag = global::GWT.Properties.Resources.muscleBackGWT;
+            Image chestMuscleDiag = global::GWT.Properties.Resources.muscleChestGWT;
+            Image armMuscleDiag = global::GWT.Properties.Resources.muscleArmGWT;
+            Image shoulderMuscleDiag = global::GWT.Properties.Resources.muscleShoulderGWT;
+            Image buttMuscleDiag = global::GWT.Properties.Resources.muscleButtGWT;
+            Image legMuscleDiag = global::GWT.Properties.Resources.muscleLegGWT;
+
+            setPanel("Back Workout", exerNumByBmi, backExercises.BackName[indexes[0]], setByGender, backExercises.BackReps[indexes[0]], backExercises.BackName[indexes[1]], setByGender, backExercises.BackReps[indexes[1]], backExercises.BackName[indexes[2]], setByGender, backExercises.BackReps[indexes[2]], backMuscleDiag, viewAll_LinkClicked);
+            setPanel("Shoulder Workout", exerNumByBmi, shoulderExercises.ShoulderName[indexes[0]], setByGender, shoulderExercises.ShoulderReps[indexes[0]], shoulderExercises.ShoulderName[indexes[1]], setByGender, shoulderExercises.ShoulderReps[indexes[1]], shoulderExercises.ShoulderName[indexes[2]], setByGender, shoulderExercises.ShoulderReps[indexes[2]], shoulderMuscleDiag, viewAll2_LinkClicked);
+            setPanel("Arm Workout", exerNumByBmi, armExercises.ArmName[indexes[0]], setByGender, armExercises.ArmReps[indexes[0]], armExercises.ArmName[indexes[1]], setByGender, armExercises.ArmReps[indexes[1]], armExercises.ArmName[indexes[2]], setByGender, armExercises.ArmReps[indexes[2]], armMuscleDiag, viewAll3_LinkClicked);
+            setPanel("Chest Workout", exerNumByBmi, chestExercises.ChestName[indexes[0]], setByGender, chestExercises.ChestReps[indexes[0]], chestExercises.ChestName[indexes[1]], setByGender, chestExercises.ChestReps[indexes[1]], chestExercises.ChestName[indexes[2]], setByGender, chestExercises.ChestReps[indexes[2]], chestMuscleDiag, viewAll4_LinkClicked);
+            setPanel("Abs Workout", exerNumByBmi, absExercises.AbsName[indexes[0]], setByGender, absExercises.AbstReps[indexes[0]], absExercises.AbsName[indexes[1]], setByGender, absExercises.AbstReps[indexes[1]], absExercises.AbsName[indexes[2]], setByGender, absExercises.AbstReps[indexes[2]], absMuscleDiag, viewAll5_LinkClicked);
+            setPanel("Butt Workout", exerNumByBmi, buttExercises.ButtName[indexes[0]], setByGender, buttExercises.ButtReps[indexes[0]], buttExercises.ButtName[indexes[1]], setByGender, buttExercises.ButtReps[indexes[1]], buttExercises.ButtName[indexes[2]], setByGender, buttExercises.ButtReps[indexes[2]], buttMuscleDiag, viewAll6_LinkClicked);
+            setPanel("Leg Workout", exerNumByBmi, legExercises.LegName[indexes[0]], setByGender, legExercises.LegReps[indexes[0]], legExercises.LegName[indexes[1]], setByGender, legExercises.LegReps[indexes[1]], legExercises.LegName[indexes[2]], setByGender, legExercises.LegReps[indexes[2]], legMuscleDiag, viewAll7_LinkClicked);
+            
+        }
+
+        private void trainingBtn_Click(object sender, EventArgs e)
+        {
+            TitleLbl.Text = "TRAINING";
+            mainPanel.Controls.Clear();
+            trainingBtn.FillColor = Color.FromArgb(226, 105, 114);
+            exercisesBtn.FillColor = Color.Transparent;
+            reportBtn.FillColor = Color.Transparent;
+            profileBtn.FillColor = Color.Transparent;
+            btnsForProfileClose();
+            y = 81;
+            getAreasFocused();
+        }
+
         private void routineFormLoad(Image exGif, string exName)
         {
             routineForm.exerciseGif.Image = exGif;
@@ -717,15 +1132,15 @@ namespace GWT
             int panelGaps = 79;
             int indexP = 0;
             int exerNumByBmi = 6;
-            if (Bmi == "Under Weight")
+            if (bodyType == "Under Weight")
             {
                 exerNumByBmi = 5;
             }
-            else if (Bmi == "Healthy")
+            else if (bodyType == "Healthy")
             {
                 exerNumByBmi = 6;
             }
-            else if (Bmi == "Over Weight")
+            else if (bodyType == "Over Weight")
             {
                 exerNumByBmi = 7;
             }
@@ -782,24 +1197,25 @@ namespace GWT
             {
                 checkbox.Text = "Set 1 x " + reps + " reps";
             }
-
             routineForm.setPanel.Controls.Add(setPanel);
             setPanel.Controls.Add(checkbox);
         }
 
-        
+        private void reportBtn_Click(object sender, EventArgs e)
+        {
+            TitleLbl.Text = "REPORT";
+            reportBtn.FillColor = Color.FromArgb(226, 105, 114);
+            trainingBtn.FillColor = Color.Transparent;
+            exercisesBtn.FillColor = Color.Transparent;
+            profileBtn.FillColor = Color.Transparent;
+            btnsForProfileClose();
+            mainPanel.Controls.Clear();
+            mainPanel.Controls.Add(reportForm.mainPanel);
+            
+        }
 
         private void check1Changed(object sender, EventArgs e)
         {
-            if (checkbox1.Checked)
-            {
-                check2 = true;
-            }
-            else
-            {
-                check2 = false;
-            }
-            
             if (checkbox1.Checked && checkbox2.Checked && checkbox3.Checked && checkbox4.Checked)
             {
                 nextSetBtn.Enabled = true;
@@ -811,14 +1227,6 @@ namespace GWT
 
         private void check2Changed(object sender, EventArgs e)
         {
-            if (checkbox2.Checked)
-            {
-                check2 = true;
-            }
-            else
-            {
-                check2 = false;
-            }
             if (checkbox1.Checked && checkbox2.Checked && checkbox3.Checked && checkbox4.Checked)
             {
                 nextSetBtn.Enabled = true;
@@ -830,14 +1238,6 @@ namespace GWT
         }
         private void check3Changed(object sender, EventArgs e)
         {
-            if (checkbox3.Checked)
-            {
-                check2 = true;
-            }
-            else
-            {
-                check2 = false;
-            }
             if (checkbox1.Checked && checkbox2.Checked && checkbox3.Checked && checkbox4.Checked)
             {
                 nextSetBtn.Enabled = true;
@@ -849,14 +1249,6 @@ namespace GWT
         }
         private void check4Changed(object sender, EventArgs e)
         {
-            if (checkbox4.Checked)
-            {
-                check2 = true;
-            }
-            else
-            {
-                check2 = false;
-            }
             if (checkbox1.Checked && checkbox2.Checked && checkbox3.Checked && checkbox4.Checked)
             {
                 nextSetBtn.Enabled = true;
@@ -866,22 +1258,35 @@ namespace GWT
                 nextSetBtn.Enabled = false;
             }
         }
-        
+        bool isWorkedOutToday = false;
         private void nextSetBtn_Click(object sender, EventArgs e)
         {
-            if (index < 5)
+            int exerNumByBmi = 6;
+            if (bodyType == "Under Weight")
+            {
+                exerNumByBmi = 5;
+            }
+            else if (bodyType == "Healthy")
+            {
+                exerNumByBmi = 6;
+            }
+            else if (bodyType == "Over Weight")
+            {
+                exerNumByBmi = 7;
+            }
+            if (index < exerNumByBmi - 1)
             {
                 nextSetBtn.Text = "NEXT";
                 UpdateNextContent(index);
                 index++;
-            } else if (index == 5)
+            } else if (index == exerNumByBmi - 1)
             {
                 UpdateNextContent(index);
                 nextSetBtn.Text = "FINISH";
                 index++;
             } else
             {
-                index = 1;
+                
                 ContentsPanel.Controls.Remove(routineForm.RoutMainPanel);
                 Control[] trainingPanels = { NavPanel, mainPanel };
                 foreach (Control cont in trainingPanels)
@@ -890,8 +1295,111 @@ namespace GWT
                 }
                 backBtn.Visible = false;
                 nextSetBtn.Visible = false;
-            }
+                TitleLbl.Visible = true;
+                workoutTotal++;
+                reportForm.seconds += TimeS;
+                if (reportForm.seconds > 60)
+                {
+                    reportForm.Minutes++;
+                }
+                reportForm.Minutes += TimeM;
+                MySqlConnection con = new MySqlConnection(connstring);
+                con.Open();
+                string qry = "UPDATE `report` SET `workout- number`= @workoutNum,`minutes`= @minutes WHERE id = @userId";
+                MySqlCommand cmd = new MySqlCommand(qry, con);
+                cmd.Parameters.AddWithValue("@minutes", reportForm.Minutes);
+                cmd.Parameters.AddWithValue("@userId", userId);
+                cmd.Parameters.AddWithValue("@workoutNum", workoutTotal);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                reportForm.workoutTotal.Text = Convert.ToString(workoutTotal);
+                reportForm.minuteTotal.Text = Convert.ToString(reportForm.Minutes);
+                workoutToday++;
+                if (!isWorkedOutToday)
+                {
+                    workoutDays++;
+                    MySqlConnection conn = new MySqlConnection(connstring);
+                    conn.Open();
+                    string query = "UPDATE `report` SET `day`= @day WHERE id = @Id";
+                    MySqlCommand command = new MySqlCommand(query, conn);
+                    command.Parameters.AddWithValue("@day", workoutDays);
+                    command.Parameters.AddWithValue("@Id", userId);
+                    command.ExecuteNonQuery();
+                    conn.Close();
+                    isWorkedOutToday = true;
+                }
+                reportForm.daysTotal.Text = Convert.ToString(workoutDays);
+                reportForm.workToday.Text = Convert.ToString(workoutToday);
+                string workoutType = "Back Workout";
+                if (isBack)
+                {
+                    workoutType = "Back Workout";
+                } else if (isShoulder)
+                {
+                    workoutType = "Shoulder Workout";
+                }
 
+                DateTime datenow = DateTime.Today;
+                string dateSplit = Convert.ToString(datenow);
+                string[] date = dateSplit.Split(' ');
+                string time = TimeM + " minutes, " + TimeS + " seconds";
+                MySqlConnection connection = new MySqlConnection(connstring);
+                connection.Open();
+                string QRY = "INSERT INTO `history`(`id`, `date`, `workout`, `time`) VALUES (?,?,?,?)";
+                MySqlCommand comm = new MySqlCommand(QRY, connection);
+                comm.Parameters.AddWithValue("param1", userId);
+                comm.Parameters.AddWithValue("param2", date[0]);
+                comm.Parameters.AddWithValue("param3", workoutType);
+                comm.Parameters.AddWithValue("param4", time);
+                comm.ExecuteNonQuery();
+                connection.Close();
+
+                FlowLayoutPanel histPanel = new FlowLayoutPanel();
+                histPanel.Size = new System.Drawing.Size(754, 62);
+
+                Label dateLbl = new Label();
+                dateLbl.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                dateLbl.Location = new System.Drawing.Point(3, 0);
+                dateLbl.Name = "date";
+                dateLbl.Size = new System.Drawing.Size(145, 62);
+                dateLbl.TabIndex = 0;
+                dateLbl.Text = date[0];
+                dateLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+                Label workoutLbl = new Label();
+                workoutLbl.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                workoutLbl.Location = new System.Drawing.Point(154, 0);
+                workoutLbl.Name = "workout";
+                workoutLbl.Size = new System.Drawing.Size(456, 62);
+                workoutLbl.TabIndex = 1;
+                workoutLbl.Text = workoutType;
+                workoutLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+                Label timeLbl = new Label();
+                timeLbl.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                timeLbl.Location = new System.Drawing.Point(616, 0);
+                timeLbl.Name = "time";
+                timeLbl.Size = new System.Drawing.Size(133, 62);
+                timeLbl.TabIndex = 2;
+                timeLbl.Text = time;
+                timeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+                histPanel.Controls.Add(dateLbl);
+                histPanel.Controls.Add(workoutLbl);
+                histPanel.Controls.Add(timeLbl);
+                reportForm.historyContent.Controls.Add(histPanel);
+                timeTo0();
+                isBack = false;
+                isShoulder = false;
+                isArm = false;
+                isChest = false;
+                isAbs = false;
+                isButt = false;
+                isLeg = false;
+                nextSetBtn.Text = "NEXT";
+                index = 1;
+                UpdateNextContent(index);
+            }
         }
 
         private  void UpdateNextContent(int index)
@@ -972,10 +1480,7 @@ namespace GWT
                     checkTypeNum++;
                 }
             }
-            check1 = false;
-            check2 = false;
-            check3 = false;
-            check4 = false;
+            
             checkbox1.Checked = false;
             checkbox2.Checked = false;
             checkbox3.Checked = false;

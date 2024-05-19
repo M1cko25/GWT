@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Text;
@@ -29,7 +30,19 @@ namespace GWT
         {
 
         }
-
+        public static string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                foreach (byte b in bytes)
+                {
+                    builder.Append(b.ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
         private void Login_Load(object sender, EventArgs e)
         {
             PrivateFontCollection poppinsBold = new PrivateFontCollection();
@@ -41,7 +54,7 @@ namespace GWT
 
             Control[] labels = { UserLbl, passLbl };
             Control[] links = { skipLink, signUpLink };
-            Control[] centerCont = { Header, userTxt, passTxt, forgotpass, signUpLink, loginBtn };
+            Control[] centerCont = { Header, userTxt, passTxt, signUpLink, loginBtn };
             
 
             foreach (Control link in links)
@@ -83,7 +96,7 @@ namespace GWT
             if (string.IsNullOrEmpty(userTxt.Text) || string.IsNullOrEmpty(passTxt.Text))
             {
                 MessageBox.Show("All fields should be filled");
-            }
+            } 
             else
             {
                 try
@@ -94,7 +107,7 @@ namespace GWT
                     string qry = "SELECT `username`, `password` FROM `users` WHERE username = @username and password = @pass";
                     MySqlCommand cmd = new MySqlCommand(qry, conn);
                     cmd.Parameters.AddWithValue("@username", user);
-                    cmd.Parameters.AddWithValue("@pass", pass);
+                    cmd.Parameters.AddWithValue("@pass", HashPassword(pass));
                     MySqlDataReader reader = cmd.ExecuteReader();
 
                     if (reader.Read())
@@ -175,9 +188,9 @@ namespace GWT
             landing.Show();
         }
 
-        private void forgotpass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
-
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

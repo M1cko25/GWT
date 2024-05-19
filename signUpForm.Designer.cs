@@ -30,6 +30,7 @@ namespace GWT
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(signUpForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel = new Guna.UI2.WinForms.Guna2Panel();
             this.Header = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -47,6 +48,7 @@ namespace GWT
             this.loading = new System.Windows.Forms.PictureBox();
             this.conEye = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.passEye = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.closeBtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loading)).BeginInit();
@@ -59,6 +61,7 @@ namespace GWT
             // 
             // panel
             // 
+            this.panel.Controls.Add(this.guna2CircleButton1);
             this.panel.Controls.Add(this.closeBtn);
             this.panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel.Location = new System.Drawing.Point(0, 0);
@@ -91,6 +94,7 @@ namespace GWT
             this.userTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.userTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.userTxt.FocusedState.Parent = this.userTxt;
+            this.userTxt.ForeColor = System.Drawing.Color.Black;
             this.userTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.userTxt.HoverState.Parent = this.userTxt;
             this.userTxt.Location = new System.Drawing.Point(126, 99);
@@ -136,6 +140,7 @@ namespace GWT
             this.passTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.passTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passTxt.FocusedState.Parent = this.passTxt;
+            this.passTxt.ForeColor = System.Drawing.Color.Black;
             this.passTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passTxt.HoverState.Parent = this.passTxt;
             this.passTxt.Location = new System.Drawing.Point(126, 160);
@@ -170,6 +175,7 @@ namespace GWT
             this.ConPassTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.ConPassTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ConPassTxt.FocusedState.Parent = this.ConPassTxt;
+            this.ConPassTxt.ForeColor = System.Drawing.Color.Black;
             this.ConPassTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ConPassTxt.HoverState.Parent = this.ConPassTxt;
             this.ConPassTxt.Location = new System.Drawing.Point(126, 225);
@@ -272,6 +278,23 @@ namespace GWT
             this.passEye.TabIndex = 12;
             this.passEye.CheckedChanged += new System.EventHandler(this.passEye_CheckedChanged);
             // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Image = global::GWT.Properties.Resources.minimizeRed;
+            this.guna2CircleButton1.Location = new System.Drawing.Point(432, 8);
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Size = new System.Drawing.Size(25, 25);
+            this.guna2CircleButton1.TabIndex = 2;
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
+            // 
             // closeBtn
             // 
             this.closeBtn.CheckedState.Parent = this.closeBtn;
@@ -305,6 +328,7 @@ namespace GWT
             this.Controls.Add(this.Header);
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "signUpForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "signUpForm";
@@ -336,5 +360,6 @@ namespace GWT
         private Guna.UI2.WinForms.Guna2ImageCheckBox conEye;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.PictureBox loading;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
     }
 }

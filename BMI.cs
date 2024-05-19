@@ -6,6 +6,10 @@ namespace GWT
 {
     public partial class BMI : Form
     {
+
+        public double bmi { get; set; }
+        bool isInMeter = true, isInFeet = false, isInKg = true, isInLbs = false;
+        double LbsDivider = 2.205, feetDivider = 3.281;
         public BMI()
         {
             InitializeComponent();
@@ -18,22 +22,30 @@ namespace GWT
 
         private void ftBtn_Click(object sender, EventArgs e)
         {
-            measureToggle(ftBtn, cmBtn);
+            measureToggle(ftBtn, mBtn);
+            isInFeet = true;
+            isInMeter = false;
         }
 
         private void cmBtn_Click(object sender, EventArgs e)
         {
-            measureToggle(cmBtn, ftBtn);
+            measureToggle(mBtn, ftBtn);
+            isInFeet = false;
+            isInMeter = true;
         }
 
         private void kgBtn_Click(object sender, EventArgs e)
         {
             measureToggle(kgBtn, lbsBtn);
+            isInKg = true;
+            isInLbs = false;
         }
 
         private void lbsBtn_Click(object sender, EventArgs e)
         {
             measureToggle(lbsBtn, kgBtn);
+            isInLbs = true;
+            isInKg = false;
         }
 
         private void measureToggle(Guna.UI2.WinForms.Guna2Button cont1, Guna.UI2.WinForms.Guna2Button cont2)
@@ -96,6 +108,48 @@ namespace GWT
             e.Handled = true;
         }
 
-        
+        private void ComputeBmi()
+        {
+            if (double.TryParse(weightTxt.Text, out double weight) && double.TryParse(heightTxt.Text, out double height))
+            {
+                if (isInLbs)
+                {
+                    weight = weight / LbsDivider;
+                } 
+
+                if (isInFeet)
+                {
+                    height = height / feetDivider;
+                }
+                bmi = weight / (height * height);
+                bmiDisplayPanel.Visible = true;
+
+                if (bmi < 18.5)
+                {
+                    bmiNumLbl.Text = bmi.ToString("#.#");
+                    commentLbl.Text = "Amazing!, Want to be feel stronger?";
+                }
+                else if (bmi > 18.5 && bmi < 25)
+                {
+                    bmiNumLbl.Text = bmi.ToString("#.#");
+                    commentLbl.Text = "You've Got a great shape!, Keep it Up!";
+                }
+                else
+                {
+                    bmiNumLbl.Text = bmi.ToString("#.#");
+                    commentLbl.Text = "Marvelous!, Want to lose weight";
+                }
+            }
+
+        }
+        private void heightTxt_TextChanged(object sender, EventArgs e)
+        {
+            ComputeBmi();
+        }
+
+        private void weightTxt_TextChanged(object sender, EventArgs e)
+        {
+            ComputeBmi();
+        }
     }
 }

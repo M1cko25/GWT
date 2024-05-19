@@ -30,10 +30,12 @@ namespace GWT
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LandingForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.headerLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -49,6 +51,7 @@ namespace GWT
             this.loadingScr = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.mainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loadingScr)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +64,7 @@ namespace GWT
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.guna2CircleButton1);
             this.panel1.Controls.Add(this.guna2ImageButton1);
             this.transition.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -69,11 +73,43 @@ namespace GWT
             this.panel1.Size = new System.Drawing.Size(1102, 40);
             this.panel1.TabIndex = 0;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.transition.SetDecoration(this.guna2PictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2PictureBox1.Image = global::GWT.Properties.Resources.MJL_CombinationMark_removebg_preview;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(15, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(60, 60);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 3;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
+            this.transition.SetDecoration(this.guna2CircleButton1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Image = global::GWT.Properties.Resources.minimizeRed;
+            this.guna2CircleButton1.Location = new System.Drawing.Point(1011, 7);
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Size = new System.Drawing.Size(25, 25);
+            this.guna2CircleButton1.TabIndex = 2;
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
+            // 
             // guna2ImageButton1
             // 
             this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
             this.transition.SetDecoration(this.guna2ImageButton1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Image = global::GWT.Properties.Resources.closeBtn;
             this.guna2ImageButton1.Location = new System.Drawing.Point(1054, 7);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
@@ -109,7 +145,7 @@ namespace GWT
             this.mainPanel.Controls.Add(this.maleLbl);
             this.mainPanel.Controls.Add(this.headerLbl);
             this.transition.SetDecoration(this.mainPanel, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.mainPanel.Location = new System.Drawing.Point(0, 40);
+            this.mainPanel.Location = new System.Drawing.Point(0, 38);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.ShadowDecoration.Parent = this.mainPanel;
             this.mainPanel.Size = new System.Drawing.Size(1102, 575);
@@ -122,6 +158,7 @@ namespace GWT
             this.transition.SetDecoration(this.BtnNext, Guna.UI2.AnimatorNS.DecorationType.None);
             this.BtnNext.HoverState.ImageSize = new System.Drawing.Size(48, 48);
             this.BtnNext.HoverState.Parent = this.BtnNext;
+            this.BtnNext.Image = global::GWT.Properties.Resources.carbon_next_outline1;
             this.BtnNext.ImageSize = new System.Drawing.Size(48, 48);
             this.BtnNext.Location = new System.Drawing.Point(1042, 504);
             this.BtnNext.Name = "BtnNext";
@@ -139,6 +176,7 @@ namespace GWT
             this.transition.SetDecoration(this.BtnBack, Guna.UI2.AnimatorNS.DecorationType.None);
             this.BtnBack.HoverState.ImageSize = new System.Drawing.Size(48, 48);
             this.BtnBack.HoverState.Parent = this.BtnBack;
+            this.BtnBack.Image = global::GWT.Properties.Resources.mingcute_back_fill;
             this.BtnBack.ImageSize = new System.Drawing.Size(48, 48);
             this.BtnBack.Location = new System.Drawing.Point(23, 504);
             this.BtnBack.Name = "BtnBack";
@@ -218,28 +256,29 @@ namespace GWT
             // 
             this.transition.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Scale;
             this.transition.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.transition.DefaultAnimation = animation1;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.transition.DefaultAnimation = animation3;
             this.transition.MaxAnimationTime = 1000;
             // 
             // loadingScr
             // 
             this.loadingScr.BackColor = System.Drawing.Color.Transparent;
             this.transition.SetDecoration(this.loadingScr, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.loadingScr.Image = global::GWT.Properties.Resources.loadingAnimationGWT2;
             this.loadingScr.Location = new System.Drawing.Point(1150, 0);
             this.loadingScr.Name = "loadingScr";
             this.loadingScr.Size = new System.Drawing.Size(1102, 611);
@@ -260,16 +299,19 @@ namespace GWT
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
             this.BackgroundImage = global::GWT.Properties.Resources.blurred_bg;
             this.ClientSize = new System.Drawing.Size(1102, 612);
+            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.loadingScr);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.panel1);
             this.transition.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LandingForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.LandingForm_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loadingScr)).EndInit();
@@ -295,6 +337,8 @@ namespace GWT
         private Guna.UI2.WinForms.Guna2ImageButton BtnBack;
         private System.Windows.Forms.PictureBox loadingScr;
         private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }
 

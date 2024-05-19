@@ -51,6 +51,9 @@
     <StartupObject>
     </StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GWT Icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
       <HintPath>packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
@@ -325,6 +328,12 @@
     <Compile Include="BMI.Designer.cs">
       <DependentUpon>BMI.cs</DependentUpon>
     </Compile>
+    <Compile Include="IntroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntroForm.Designer.cs">
+      <DependentUpon>IntroForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LandingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -343,6 +352,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserProfile.Designer.cs">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkoutReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkoutReport.Designer.cs">
+      <DependentUpon>WorkoutReport.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkoutRoutine.cs">
       <SubType>Form</SubType>
@@ -364,13 +385,14 @@
     <Compile Include="TrainingForm.Designer.cs">
       <DependentUpon>TrainingForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="User.cs" />
     <Compile Include="WorkingOutForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WorkingOutForm.Designer.cs">
       <DependentUpon>WorkingOutForm.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\Replace.png" />
+    <None Include="Resources\Sign Up.png" />
     <None Include="Resources\Wall-SitimgGWT.png" />
     <None Include="Resources\Standing-Hip-ExtensionimgGWT.png" />
     <None Include="Resources\Standing-Hip-ExtensiongifGWT.gif" />
@@ -414,6 +436,15 @@
     <None Include="Resources\ReverseCrunchGWT.gif" />
     <None Include="Resources\Reverse_crunchGWT.gif" />
     <None Include="Resources\Refresh.png" />
+    <EmbeddedResource Include="IntroForm.resx">
+      <DependentUpon>IntroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProfile.resx">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkoutReport.resx">
+      <DependentUpon>WorkoutReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkoutRoutine.resx">
       <DependentUpon>WorkoutRoutine.cs</DependentUpon>
     </EmbeddedResource>
@@ -605,6 +636,20 @@
     <None Include="Resources\Kettlebell-Single-Leg-DeadliftgifGWT.gif" />
     <None Include="Resources\Kettlebell-Single-Leg-DeadliftimgGWT.png" />
     <None Include="Resources\Kettlebell-SwingsgifGWT.gif" />
+    <None Include="Resources\Logout Rounded Left.png" />
+    <None Include="Resources\Logout Rounded Left1.png" />
+    <None Include="Resources\Logout Rounded Left %281%29.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\Edit %281%29.png" />
+    <None Include="Resources\Done.png" />
+    <None Include="Resources\MacOS Minimize.png" />
+    <None Include="Resources\minimizeRed.png" />
+    <Content Include="GWT Icon.ico" />
+    <Content Include="MJL_CombinationMark.ico" />
+    <None Include="Resources\MJL_CombinationMark.jpg" />
+    <None Include="Resources\MJL_CombinationMark-removebg-preview.png" />
+    <None Include="Resources\GwtLogo-removebg-preview.png" />
+    <None Include="Resources\MJL_CombinationMark-removebg-preview1.png" />
     <Content Include="Resources\Poppins-Bold.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

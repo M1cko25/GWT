@@ -34,23 +34,28 @@ namespace GWT
             this.label3 = new System.Windows.Forms.Label();
             this.kgBtn = new Guna.UI2.WinForms.Guna2Button();
             this.lbsBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.cmBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.mBtn = new Guna.UI2.WinForms.Guna2Button();
             this.ftBtn = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.weightTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.heightTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.headerLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.bmiDisplayPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.bmiNumLbl = new System.Windows.Forms.Label();
+            this.commentLbl = new System.Windows.Forms.Label();
             this.BmiContent.SuspendLayout();
             this.BmiPanel.SuspendLayout();
+            this.bmiDisplayPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // BmiContent
             // 
+            this.BmiContent.Controls.Add(this.bmiDisplayPanel);
             this.BmiContent.Controls.Add(this.BmiPanel);
             this.BmiContent.Controls.Add(this.kgBtn);
             this.BmiContent.Controls.Add(this.lbsBtn);
-            this.BmiContent.Controls.Add(this.cmBtn);
+            this.BmiContent.Controls.Add(this.mBtn);
             this.BmiContent.Controls.Add(this.ftBtn);
             this.BmiContent.Controls.Add(this.label2);
             this.BmiContent.Controls.Add(this.label1);
@@ -125,26 +130,26 @@ namespace GWT
             this.lbsBtn.UseTransparentBackground = true;
             this.lbsBtn.Click += new System.EventHandler(this.lbsBtn_Click);
             // 
-            // cmBtn
+            // mBtn
             // 
-            this.cmBtn.BackColor = System.Drawing.Color.Transparent;
-            this.cmBtn.BorderColor = System.Drawing.Color.White;
-            this.cmBtn.BorderRadius = 12;
-            this.cmBtn.BorderThickness = 1;
-            this.cmBtn.CheckedState.Parent = this.cmBtn;
-            this.cmBtn.CustomImages.Parent = this.cmBtn;
-            this.cmBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(105)))), ((int)(((byte)(114)))));
-            this.cmBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cmBtn.ForeColor = System.Drawing.Color.White;
-            this.cmBtn.HoverState.Parent = this.cmBtn;
-            this.cmBtn.Location = new System.Drawing.Point(328, 280);
-            this.cmBtn.Name = "cmBtn";
-            this.cmBtn.ShadowDecoration.Parent = this.cmBtn;
-            this.cmBtn.Size = new System.Drawing.Size(47, 26);
-            this.cmBtn.TabIndex = 19;
-            this.cmBtn.Text = "cm";
-            this.cmBtn.UseTransparentBackground = true;
-            this.cmBtn.Click += new System.EventHandler(this.cmBtn_Click);
+            this.mBtn.BackColor = System.Drawing.Color.Transparent;
+            this.mBtn.BorderColor = System.Drawing.Color.White;
+            this.mBtn.BorderRadius = 12;
+            this.mBtn.BorderThickness = 1;
+            this.mBtn.CheckedState.Parent = this.mBtn;
+            this.mBtn.CustomImages.Parent = this.mBtn;
+            this.mBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(105)))), ((int)(((byte)(114)))));
+            this.mBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mBtn.ForeColor = System.Drawing.Color.White;
+            this.mBtn.HoverState.Parent = this.mBtn;
+            this.mBtn.Location = new System.Drawing.Point(328, 280);
+            this.mBtn.Name = "mBtn";
+            this.mBtn.ShadowDecoration.Parent = this.mBtn;
+            this.mBtn.Size = new System.Drawing.Size(47, 26);
+            this.mBtn.TabIndex = 19;
+            this.mBtn.Text = "m";
+            this.mBtn.UseTransparentBackground = true;
+            this.mBtn.Click += new System.EventHandler(this.cmBtn_Click);
             // 
             // ftBtn
             // 
@@ -211,6 +216,7 @@ namespace GWT
             this.weightTxt.ShadowDecoration.Parent = this.weightTxt;
             this.weightTxt.Size = new System.Drawing.Size(167, 51);
             this.weightTxt.TabIndex = 16;
+            this.weightTxt.TextChanged += new System.EventHandler(this.weightTxt_TextChanged);
             this.weightTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.weightTxt_KeyPress);
             // 
             // heightTxt
@@ -236,6 +242,7 @@ namespace GWT
             this.heightTxt.ShadowDecoration.Parent = this.heightTxt;
             this.heightTxt.Size = new System.Drawing.Size(167, 51);
             this.heightTxt.TabIndex = 15;
+            this.heightTxt.TextChanged += new System.EventHandler(this.heightTxt_TextChanged);
             this.heightTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.heightTxt_KeyPress);
             // 
             // headerLbl
@@ -250,6 +257,43 @@ namespace GWT
             this.headerLbl.TabIndex = 3;
             this.headerLbl.Text = "WHAT’S YOUR HEIGHT AND WEIGHT?";
             this.headerLbl.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // bmiDisplayPanel
+            // 
+            this.bmiDisplayPanel.BorderRadius = 20;
+            this.bmiDisplayPanel.Controls.Add(this.commentLbl);
+            this.bmiDisplayPanel.Controls.Add(this.bmiNumLbl);
+            this.bmiDisplayPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(85)))), ((int)(((byte)(44)))), ((int)(((byte)(87)))));
+            this.bmiDisplayPanel.Location = new System.Drawing.Point(411, 387);
+            this.bmiDisplayPanel.Name = "bmiDisplayPanel";
+            this.bmiDisplayPanel.ShadowDecoration.Parent = this.bmiDisplayPanel;
+            this.bmiDisplayPanel.Size = new System.Drawing.Size(264, 97);
+            this.bmiDisplayPanel.TabIndex = 24;
+            this.bmiDisplayPanel.Visible = false;
+            // 
+            // bmiNumLbl
+            // 
+            this.bmiNumLbl.BackColor = System.Drawing.Color.Transparent;
+            this.bmiNumLbl.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bmiNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(105)))), ((int)(((byte)(114)))));
+            this.bmiNumLbl.Location = new System.Drawing.Point(3, 0);
+            this.bmiNumLbl.Name = "bmiNumLbl";
+            this.bmiNumLbl.Size = new System.Drawing.Size(92, 97);
+            this.bmiNumLbl.TabIndex = 0;
+            this.bmiNumLbl.Text = "22";
+            this.bmiNumLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // commentLbl
+            // 
+            this.commentLbl.BackColor = System.Drawing.Color.Transparent;
+            this.commentLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.commentLbl.ForeColor = System.Drawing.Color.White;
+            this.commentLbl.Location = new System.Drawing.Point(101, 0);
+            this.commentLbl.Name = "commentLbl";
+            this.commentLbl.Size = new System.Drawing.Size(163, 104);
+            this.commentLbl.TabIndex = 1;
+            this.commentLbl.Text = "You\'ve Got a great shape";
+            this.commentLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BMI
             // 
@@ -266,6 +310,7 @@ namespace GWT
             this.BmiContent.PerformLayout();
             this.BmiPanel.ResumeLayout(false);
             this.BmiPanel.PerformLayout();
+            this.bmiDisplayPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -280,9 +325,12 @@ namespace GWT
         public Guna.UI2.WinForms.Guna2Panel BmiPanel;
         public Guna.UI2.WinForms.Guna2TextBox weightTxt;
         public Guna.UI2.WinForms.Guna2TextBox heightTxt;
-        private Guna.UI2.WinForms.Guna2Button cmBtn;
+        private Guna.UI2.WinForms.Guna2Button mBtn;
         private Guna.UI2.WinForms.Guna2Button ftBtn;
         private Guna.UI2.WinForms.Guna2Button kgBtn;
         private Guna.UI2.WinForms.Guna2Button lbsBtn;
+        private Guna.UI2.WinForms.Guna2Panel bmiDisplayPanel;
+        private System.Windows.Forms.Label commentLbl;
+        private System.Windows.Forms.Label bmiNumLbl;
     }
 }

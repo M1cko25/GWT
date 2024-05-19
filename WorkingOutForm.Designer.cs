@@ -33,15 +33,15 @@ namespace GWT
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.workoutLbl = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.MuscleDiagram = new Guna.UI2.WinForms.Guna2PictureBox();
             this.exercisePanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.MuscleDiagram = new Guna.UI2.WinForms.Guna2PictureBox();
             this.WorkMainPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MuscleDiagram)).BeginInit();
             this.exercisePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MuscleDiagram)).BeginInit();
             this.WorkMainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,17 +74,6 @@ namespace GWT
             this.guna2Panel1.Size = new System.Drawing.Size(1054, 471);
             this.guna2Panel1.TabIndex = 5;
             // 
-            // MuscleDiagram
-            // 
-            this.MuscleDiagram.Image = global::GWT.Properties.Resources.muscleAbsGWT;
-            this.MuscleDiagram.Location = new System.Drawing.Point(38, 26);
-            this.MuscleDiagram.Name = "MuscleDiagram";
-            this.MuscleDiagram.ShadowDecoration.Parent = this.MuscleDiagram;
-            this.MuscleDiagram.Size = new System.Drawing.Size(278, 424);
-            this.MuscleDiagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.MuscleDiagram.TabIndex = 2;
-            this.MuscleDiagram.TabStop = false;
-            // 
             // exercisePanel
             // 
             this.exercisePanel.AutoScroll = true;
@@ -94,18 +83,18 @@ namespace GWT
             this.exercisePanel.Location = new System.Drawing.Point(342, 26);
             this.exercisePanel.Name = "exercisePanel";
             this.exercisePanel.ShadowDecoration.Parent = this.exercisePanel;
-            this.exercisePanel.Size = new System.Drawing.Size(683, 293);
+            this.exercisePanel.Size = new System.Drawing.Size(744, 293);
             this.exercisePanel.TabIndex = 3;
             // 
-            // guna2Panel5
+            // guna2Panel4
             // 
-            this.guna2Panel5.BorderRadius = 15;
-            this.guna2Panel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.guna2Panel5.Location = new System.Drawing.Point(140, 18);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
-            this.guna2Panel5.Size = new System.Drawing.Size(410, 73);
-            this.guna2Panel5.TabIndex = 2;
+            this.guna2Panel4.BorderRadius = 15;
+            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2Panel4.Location = new System.Drawing.Point(140, 176);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
+            this.guna2Panel4.Size = new System.Drawing.Size(410, 73);
+            this.guna2Panel4.TabIndex = 4;
             // 
             // guna2Panel3
             // 
@@ -117,15 +106,26 @@ namespace GWT
             this.guna2Panel3.Size = new System.Drawing.Size(410, 73);
             this.guna2Panel3.TabIndex = 3;
             // 
-            // guna2Panel4
+            // guna2Panel5
             // 
-            this.guna2Panel4.BorderRadius = 15;
-            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.guna2Panel4.Location = new System.Drawing.Point(140, 176);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
-            this.guna2Panel4.Size = new System.Drawing.Size(410, 73);
-            this.guna2Panel4.TabIndex = 4;
+            this.guna2Panel5.BorderRadius = 15;
+            this.guna2Panel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2Panel5.Location = new System.Drawing.Point(140, 18);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
+            this.guna2Panel5.Size = new System.Drawing.Size(410, 73);
+            this.guna2Panel5.TabIndex = 2;
+            // 
+            // MuscleDiagram
+            // 
+            this.MuscleDiagram.Image = global::GWT.Properties.Resources.muscleAbsGWT;
+            this.MuscleDiagram.Location = new System.Drawing.Point(38, 26);
+            this.MuscleDiagram.Name = "MuscleDiagram";
+            this.MuscleDiagram.ShadowDecoration.Parent = this.MuscleDiagram;
+            this.MuscleDiagram.Size = new System.Drawing.Size(278, 424);
+            this.MuscleDiagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MuscleDiagram.TabIndex = 2;
+            this.MuscleDiagram.TabStop = false;
             // 
             // WorkMainPanel
             // 
@@ -150,8 +150,8 @@ namespace GWT
             this.Text = "WorkingOutForm";
             this.Load += new System.EventHandler(this.WorkingOutForm_Load);
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.MuscleDiagram)).EndInit();
             this.exercisePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MuscleDiagram)).EndInit();
             this.WorkMainPanel.ResumeLayout(false);
             this.WorkMainPanel.PerformLayout();
             this.ResumeLayout(false);

@@ -118,545 +118,473 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="closeBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\closeBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dumbbellIconGwt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dumbbellIconGwt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carbon_next-outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carbon_next-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carbon_next-outline1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carbon_next-outline1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="muscleAbsGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\muscleAbsGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mingcute_back-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mingcute_back-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 91" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="loadingAnimationGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loadingAnimationGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Group 9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reportIconGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reportIconGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="settingIconGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settingIconGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="loadingAnimationGWT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loadingAnimationGWT1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eye open" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eye closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gymLoading2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gymLoading2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blockIconGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blockIconGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="loadingAnimationGWT2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loadingAnimationGWT2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="userIconGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\userIconGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blurred bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blurred bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fluent_minimize-24-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fluent_minimize-24-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gymLoading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gymLoading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ReverseCrunchGwt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ReverseCrunchGwt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Reverse_crunchGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reverse_crunchGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PullUpsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PullUpsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PullUpsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PullUpsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bandLatPulldowngifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bandLatPulldowngifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bandLatPulldownimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bandLatPulldownimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="barbellRowgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\barbellRowgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="barbellRowimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\barbellRowimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BentOverRowsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BentOverRowsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BentOverRowsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BentOverRowsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chestBellRowgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chestBellRowgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chestBellRowimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chestBellRowimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="deadHanggifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deadHanggifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="deadHangimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deadHangimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="deadliftgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deadliftgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="deadliftimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deadliftimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="farmersWalkgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\farmersWalkgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="farmersWalkimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\farmersWalkimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="latPullDowngifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\latPullDowngifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="latPullDownimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\latPullDownimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="muscleArmGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\muscleArmGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="muscleBackGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\muscleBackpart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="muscleButtGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\muscleButtGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="muscleChestGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\muscleChestGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="muscleLegGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\muscleLegGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="muscleShoulderGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\muscleShoulderGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="oneArmDumbbellRowgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\oneArmDumbbellRowgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="oneArmDumbbellRowimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\oneArmDumbbellRowimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plankgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plankgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plankimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plankimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="renegadeRowsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\renegadeRowsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="renegadeRowsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\renegadeRowsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seatedCableRowsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seatedCableRowsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="seatedCableRowsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seatedCableRowsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ab_Coaster_MachinegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ab-Coaster-MachinegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ab_Coaster_MachineimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ab-Coaster-MachineimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alternate_Leg_RaisesgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alternate-Leg-RaisesgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alternate_Leg_RaisesimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alternate-Leg-RaisesimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="armCirclesShouldersgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\armCirclesShouldersgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="armCirclesShouldersimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\armCirclesShouldersimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ArnoldPressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ArnoldPressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ArnoldPressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ArnoldPressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Barbell_Bench_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Barbell-Bench-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Barbell_Bench_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Barbell-Bench-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Barbell_DeadliftgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Barbell-DeadliftgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Barbell_DeadliftimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Barbell-DeadliftimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Barbell_Lateral_LungegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Barbell-Lateral-LungegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Barbell_Lateral_LungeimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Barbell-Lateral-LungeimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BARBELL_SQUATgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BARBELL-SQUATgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BARBELL_SQUATimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BARBELL-SQUATimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bench_DipsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bench-DipsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bench_DipsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bench-DipsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bent_Over_Lateral_RaisegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bent-Over-Lateral-RaisegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bent_Over_Lateral_RaiseimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bent-Over-Lateral-RaiseimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bicycle_CrunchgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bicycle-CrunchgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bicycle_CrunchimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bicycle-CrunchimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bodyweight_hip_thrustgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bodyweight-hip-thrustgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bodyweight_hip_thrustimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bodyweight-hip-thrustimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bodyweight_Single_Leg_DeadliftgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bodyweight-Single-Leg-DeadliftgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bodyweight_Single_Leg_DeadliftimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bodyweight-Single-Leg-DeadliftimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cable_Rope_Overhead_Triceps_ExtensiongifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cable-Rope-Overhead-Triceps-ExtensiongifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cable_Rope_Overhead_Triceps_ExtensionimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cable-Rope-Overhead-Triceps-ExtensionimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cable_Upper_Chest_CrossoversgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cable-Upper-Chest-CrossoversgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cable_Upper_Chest_CrossoversimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cable-Upper-Chest-CrossoversimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cross_Body_Mountain_ClimbergifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cross-Body-Mountain-ClimbergifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cross_Body_Mountain_ClimberimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cross-Body-Mountain-ClimberimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cross_CrunchgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cross-CrunchgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cross_CrunchimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cross-CrunchimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CrunchgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CrunchgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CrunchimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CrunchimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Curtsey_SquatgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Curtsey-SquatgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Curtsey_SquatimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Curtsey-SquatimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="curtsy_lungegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\curtsy-lungegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="curtsy_lungeimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\curtsy-lungeimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dragon_FlaggifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dragon-FlaggifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dragon_FlagimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dragon-FlagimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_4_Ways_Lateral_RaisegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-4-Ways-Lateral-RaisegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_4_Ways_Lateral_RaiseimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-4-Ways-Lateral-RaiseimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dumbbell_deadliftsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dumbbell-deadliftsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dumbbell_deadliftsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dumbbell-deadliftsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_FlygifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-FlygifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_FlyimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-FlyimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_Goblet_SquatgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-Goblet-SquatgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_Goblet_SquatimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-Goblet-SquatimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_KickbackgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-KickbackgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_KickbackimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-KickbackimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_Lateral_RaisegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-Lateral-RaisegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_Lateral_RaiseimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-Lateral-RaiseimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dumbbell_lungesgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dumbbell-lungesgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dumbbell_lungesimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dumbbell-lungesimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_PullovergifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-PullovergifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_PulloverimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-PulloverimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_Shoulder_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-Shoulder-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_Shoulder_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-Shoulder-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_SquatgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-SquatgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dumbbell_SquatimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dumbbell-SquatimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logout Rounded Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logout Rounded Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dumbbell_sumo_deadliftgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dumbbell-sumo-deadliftgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dumbbell_sumo_deadliftimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dumbbell-sumo-deadliftimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="High_Cable_CrossovergifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\High-Cable-CrossovergifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="High_Cable_CrossoverimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\High-Cable-CrossoverimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Incline_Barbell_Bench_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Incline-Barbell-Bench-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Incline_Barbell_Bench_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Incline-Barbell-Bench-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BARBELL_SQUATimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BARBELL-SQUATimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Incline_Chest_Fly_MachinegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Incline-Chest-Fly-MachinegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Standing_Cable_CrunchimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Standing-Cable-CrunchimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Incline_Chest_Fly_MachineimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Incline-Chest-Fly-MachineimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Dumbbell_FlygifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-FlygifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Incline_dumbbell_FlygifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Incline-dumbbell-FlygifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="latPullDowngifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\latPullDowngifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Incline_dumbbell_FlyimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Incline-dumbbell-FlyimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Barbell_Bench_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barbell-Bench-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Jump_SquatgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Jump-SquatgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="blockIconGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blockIconGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Jump_SquatimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Jump-SquatimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Kettlebell_Single_Leg_DeadliftgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kettlebell-Single-Leg-DeadliftgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Kettlebell_Single_Leg_DeadliftimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kettlebell-Single-Leg-DeadliftimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Kettlebell_SwingsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kettlebell-SwingsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Kettlebell_SwingsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kettlebell-SwingsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Leg_CurlgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Leg-CurlgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Leg_CurlimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Leg-CurlimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Leg_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Leg-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Leg_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Leg-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Lever_Overhand_Triceps_DipgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lever-Overhand-Triceps-DipgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Lever_Overhand_Triceps_DipimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lever-Overhand-Triceps-DipimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Low_Cable_CrossovergifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Low-Cable-CrossovergifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Low_Cable_CrossoverimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Low-Cable-CrossoverimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Machine_FlygifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Machine-FlygifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Machine_FlyimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Machine-FlyimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Machine_Shoulder_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Machine-Shoulder-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Machine_Shoulder_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Machine-Shoulder-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Medicine_Ball_Overhead_ThrowgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Medicine-Ball-Overhead-ThrowgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Dumbbell_SquatgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-SquatgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Medicine_Ball_Overhead_ThrowimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Medicine-Ball-Overhead-ThrowimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Medicine_Ball_Rotational_ThrowgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Medicine-Ball-Rotational-ThrowgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="userIconGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\userIconGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Medicine_Ball_Rotational_ThrowimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Medicine-Ball-Rotational-ThrowimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="settingIconGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settingIconGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mountain_climbergifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mountain-climbergifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Kettlebell_Single_Leg_DeadliftimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kettlebell-Single-Leg-DeadliftimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mountain_climberimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mountain-climberimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ReverseCrunchGwt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReverseCrunchGwt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Oblique_Floor_CrunchesgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Oblique-Floor-CrunchesgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="deadliftgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deadliftgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Oblique_Floor_CrunchesimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Oblique-Floor-CrunchesimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="muscleArmGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\muscleArmGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="one_arm_Cable_Lateral_RaisegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\one-arm-Cable-Lateral-RaisegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="one_arm_Cable_Lateral_RaiseimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\one-arm-Cable-Lateral-RaiseimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="One_Arm_Reverse_Push_DowngifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\One-Arm-Reverse-Push-DowngifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="One_Arm_Reverse_Push_DownimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\One-Arm-Reverse-Push-DownimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="One_arm_triceps_pushdowngifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\One-arm-triceps-pushdowngifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="One_arm_triceps_pushdownimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\One-arm-triceps-pushdownimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Overhead_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Overhead-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Overhead_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Overhead-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pec_Deck_FlygifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pec-Deck-FlygifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pec_Deck_FlyimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pec-Deck-FlyimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PushdowngifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PushdowngifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PushdownimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PushdownimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Reverse_Lunge_KneegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reverse-Lunge-KneegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Reverse_Lunge_KneeimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reverse-Lunge-KneeimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Seated_Behind_the_Neck_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Seated-Behind-the-Neck-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Seated_Behind_the_Neck_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Seated-Behind-the-Neck-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Seated_Bench_Leg_Pull_ingifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Seated-Bench-Leg-Pull-ingifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Seated_Bench_Leg_Pull_inimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Seated-Bench-Leg-Pull-inimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Standing_Leg_CirclesgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Standing-Leg-CirclesgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Seated_Dumbbell_Triceps_ExtensiongifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Seated-Dumbbell-Triceps-ExtensiongifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Seated_Dumbbell_Triceps_ExtensionimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Seated-Dumbbell-Triceps-ExtensionimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Triceps_DipsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Triceps-DipsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cross_CrunchgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cross-CrunchgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Oblique_Floor_CrunchesimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oblique-Floor-CrunchesimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Machine_Shoulder_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Machine-Shoulder-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cable_Upper_Chest_CrossoversgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cable-Upper-Chest-CrossoversgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cross_CrunchimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cross-CrunchimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Oblique_Floor_CrunchesgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oblique-Floor-CrunchesgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="One_arm_triceps_pushdowngifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\One-arm-triceps-pushdowngifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BentOverRowsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BentOverRowsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carbon_next-outline1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carbon_next-outline1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="muscleChestGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\muscleChestGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kettlebell_SwingsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kettlebell-SwingsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MJL_CombinationMark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MJL_CombinationMark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alternate_Leg_RaisesimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alternate-Leg-RaisesimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dragon_FlagimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dragon-FlagimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cross_Body_Mountain_ClimberimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cross-Body-Mountain-ClimberimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Triceps_dips_on_floorsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Triceps-dips-on-floorsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logout Rounded Left (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logout Rounded Left (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MJL_CombinationMark-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MJL_CombinationMark-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_PullovergifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-PullovergifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="High_Cable_CrossoverimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\High-Cable-CrossoverimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Static_LungeimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Static-LungeimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_KickbackgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-KickbackgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eye open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_Lateral_RaisegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-Lateral-RaisegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dumbbellIconGwt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dumbbellIconGwt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Curtsey_SquatgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Curtsey-SquatgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bicycle_CrunchimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bicycle-CrunchimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Leg_CurlgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Leg-CurlgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Low_Cable_CrossoverimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Low-Cable-CrossoverimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_Lateral_RaiseimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-Lateral-RaiseimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oneArmDumbbellRowgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oneArmDumbbellRowgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Leg_CurlimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Leg-CurlimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Overhead_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Overhead-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chestBellRowgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chestBellRowgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logout Rounded Left1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logout Rounded Left1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closeBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closeBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="renegadeRowsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\renegadeRowsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Leg_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Leg-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Medicine_Ball_Rotational_ThrowgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Medicine-Ball-Rotational-ThrowgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="farmersWalkgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\farmersWalkgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barbell_DeadliftimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barbell-DeadliftimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_Shoulder_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-Shoulder-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bodyweight_Single_Leg_DeadliftimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bodyweight-Single-Leg-DeadliftimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Standing_Hip_ExtensiongifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Standing-Hip-ExtensiongifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lever_Overhand_Triceps_DipgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lever-Overhand-Triceps-DipgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dumbbell_sumo_deadliftimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dumbbell-sumo-deadliftimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loadingAnimationGWT2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loadingAnimationGWT2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gymLoading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gymLoading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_4_Ways_Lateral_RaiseimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-4-Ways-Lateral-RaiseimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seated_Shoulder_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seated-Shoulder-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kettlebell_SwingsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kettlebell-SwingsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kettlebell_Single_Leg_DeadliftgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kettlebell-Single-Leg-DeadliftgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="One_Arm_Reverse_Push_DowngifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\One-Arm-Reverse-Push-DowngifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loadingAnimationGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loadingAnimationGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mountain_climbergifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mountain-climbergifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dragon_FlaggifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dragon-FlaggifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_Goblet_SquatgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-Goblet-SquatgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alternate_Leg_RaisesgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alternate-Leg-RaisesgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="renegadeRowsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\renegadeRowsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Curtsey_SquatimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Curtsey-SquatimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArnoldPressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArnoldPressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bent_Over_Lateral_RaisegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bent-Over-Lateral-RaisegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seated_Behind_the_Neck_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seated-Behind-the-Neck-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_SquatimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-SquatimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="armCirclesShouldersimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armCirclesShouldersimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wall_Push_upsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wall-Push-upsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PushdowngifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PushdowngifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Triceps_DipsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Triceps-DipsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluent_minimize-24-filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fluent_minimize-24-filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seated_Bench_Leg_Pull_inimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seated-Bench-Leg-Pull-inimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barbellRowimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barbellRowimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bicycle_CrunchgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bicycle-CrunchgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Medicine_Ball_Overhead_ThrowgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Medicine-Ball-Overhead-ThrowgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bench_DipsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bench-DipsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oneArmDumbbellRowimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oneArmDumbbellRowimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="One_arm_triceps_pushdownimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\One-arm-triceps-pushdownimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="muscleBackGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\muscleBackpart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ab_Coaster_MachineimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ab-Coaster-MachineimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cross_Body_Mountain_ClimbergifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cross-Body-Mountain-ClimbergifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bandLatPulldownimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bandLatPulldownimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wall_SitimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wall-SitimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bent_Over_Lateral_RaiseimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bent-Over-Lateral-RaiseimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Standing_Hip_Abduction_1gifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Standing-Hip-Abduction-1gifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bodyweight_Single_Leg_DeadliftgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bodyweight-Single-Leg-DeadliftgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimizeRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimizeRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Leg_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Leg-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Machine_FlygifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Machine-FlygifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="muscleLegGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\muscleLegGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_KickbackimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-KickbackimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Machine_FlyimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Machine-FlyimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BentOverRowsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BentOverRowsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="muscleShoulderGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\muscleShoulderGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pec_Deck_FlygifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pec-Deck-FlygifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="latPullDownimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\latPullDownimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_Goblet_SquatimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-Goblet-SquatimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Replace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Replace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="muscleButtGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\muscleButtGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Incline_Chest_Fly_MachinegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Incline-Chest-Fly-MachinegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sign Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sign Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Incline_Barbell_Bench_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Incline-Barbell-Bench-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Standing_Cable_CrunchgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Standing-Cable-CrunchgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="muscleAbsGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\muscleAbsGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seatedCableRowsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seatedCableRowsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="farmersWalkimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\farmersWalkimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Static_LungegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Static-LungegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_PulloverimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-PulloverimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reverse_crunchGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reverse_crunchGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barbell_Bench_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barbell-Bench-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mountain_climberimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mountain-climberimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barbell_DeadliftgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barbell-DeadliftgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Done" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Done.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Seated_Shoulder_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Seated-Shoulder-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Seated_Shoulder_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Seated-Shoulder-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Dumbbell_Shoulder_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-Shoulder-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bodyweight_hip_thrustgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bodyweight-hip-thrustgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PullUpsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PullUpsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Low_Cable_CrossovergifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Low-Cable-CrossovergifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Standing_Leg_CirclesimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Standing-Leg-CirclesimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dumbbell_deadliftsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dumbbell-deadliftsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bench_DipsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bench-DipsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lever_Overhand_Triceps_DipimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lever-Overhand-Triceps-DipimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carbon_next-outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carbon_next-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="curtsy_lungeimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\curtsy-lungeimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reverse_Lunge_KneeimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reverse-Lunge-KneeimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mingcute_back-fill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mingcute_back-fill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Incline_dumbbell_FlygifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Incline-dumbbell-FlygifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_FlyimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-FlyimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pec_Deck_FlyimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pec-Deck-FlyimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bandLatPulldowngifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bandLatPulldowngifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="side_arm_raisegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\side-arm-circlesgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -664,61 +592,175 @@
   <data name="side_arm_raiseimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\side-arm-circlesimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Side_Lying_ClamgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Side-Lying-ClamgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cable_Upper_Chest_CrossoversimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cable-Upper-Chest-CrossoversimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Side_Lying_ClamimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Side-Lying-ClamimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="seatedCableRowsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seatedCableRowsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Standing_Cable_CrunchgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Standing-Cable-CrunchgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MacOS Minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MacOS Minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Standing_Cable_CrunchimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Standing-Cable-CrunchimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="deadHangimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deadHangimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Standing_Hip_Abduction_1gifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Standing-Hip-Abduction-1gifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="curtsy_lungegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\curtsy-lungegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Standing_Hip_Abduction_1imgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Standing-Hip-Abduction-1imgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BARBELL_SQUATgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BARBELL-SQUATgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Standing_Hip_ExtensiongifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Standing-Hip-ExtensiongifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="loadingAnimationGWT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loadingAnimationGWT1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Standing_Hip_ExtensionimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Standing-Hip-ExtensionimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ArnoldPressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArnoldPressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Standing_Leg_CirclesgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Standing-Leg-CirclesgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Incline_dumbbell_FlyimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Incline-dumbbell-FlyimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Standing_Leg_CirclesimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Standing-Leg-CirclesimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Seated_Behind_the_Neck_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seated-Behind-the-Neck-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Static_LungegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Static-LungegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eye closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Static_LungeimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Static-LungeimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="one_arm_Cable_Lateral_RaisegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\one-arm-Cable-Lateral-RaisegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Triceps_DipsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Triceps-DipsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reportIconGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reportIconGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Triceps_DipsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Triceps-DipsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CrunchimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CrunchimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Triceps_dips_on_floorsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Triceps-dips-on-floorsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Overhead_PressimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Overhead-PressimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Machine_Shoulder_PressgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Machine-Shoulder-PressgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seated_Dumbbell_Triceps_ExtensionimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seated-Dumbbell-Triceps-ExtensionimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dumbbell_deadliftsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dumbbell-deadliftsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jump_SquatimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jump-SquatimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Triceps_dips_on_floorsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Triceps-dips-on-floorsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Wall_Push_upsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Wall-Push-upsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="deadliftimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deadliftimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dumbbell_lungesgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dumbbell-lungesgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dumbbell_lungesimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dumbbell-lungesimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cable_Rope_Overhead_Triceps_ExtensionimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cable-Rope-Overhead-Triceps-ExtensionimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dumbbell_4_Ways_Lateral_RaisegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dumbbell-4-Ways-Lateral-RaisegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gymLoading2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gymLoading2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ab_Coaster_MachinegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ab-Coaster-MachinegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plankgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plankgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barbellRowgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barbellRowgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PushdownimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PushdownimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="High_Cable_CrossovergifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\High-Cable-CrossovergifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="one_arm_Cable_Lateral_RaiseimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\one-arm-Cable-Lateral-RaiseimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Medicine_Ball_Rotational_ThrowimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Medicine-Ball-Rotational-ThrowimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barbell_Lateral_LungegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barbell-Lateral-LungegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cable_Rope_Overhead_Triceps_ExtensiongifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cable-Rope-Overhead-Triceps-ExtensiongifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Side_Lying_ClamimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Side-Lying-ClamimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Standing_Hip_ExtensionimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Standing-Hip-ExtensionimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Standing_Hip_Abduction_1imgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Standing-Hip-Abduction-1imgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plankimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plankimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Side_Lying_ClamgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Side-Lying-ClamgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CrunchgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CrunchgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reverse_Lunge_KneegifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reverse-Lunge-KneegifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bodyweight_hip_thrustimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bodyweight-hip-thrustimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Wall_Push_upsimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wall-Push-upsimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Wall_SitimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Wall-SitimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Incline_Chest_Fly_MachineimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Incline-Chest-Fly-MachineimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blurred bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blurred bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seated_Bench_Leg_Pull_ingifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seated-Bench-Leg-Pull-ingifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chestBellRowimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chestBellRowimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jump_SquatgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jump-SquatgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PullUpsgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PullUpsgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barbell_Lateral_LungeimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barbell-Lateral-LungeimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="armCirclesShouldersgifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armCirclesShouldersgifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deadHanggifGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deadHanggifGWT.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="One_Arm_Reverse_Push_DownimgGWT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\One-Arm-Reverse-Push-DownimgGWT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GwtLogo-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GwtLogo-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MJL_CombinationMark-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MJL_CombinationMark-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

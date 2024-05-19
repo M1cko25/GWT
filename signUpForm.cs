@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,12 +22,25 @@ namespace GWT
     {
         private string connstring = "Server=127.0.0.1;Database=gwt_db;username=root";
         private LandingForm landing = new LandingForm();
-       
+        private TrainingForm trainForm = new TrainingForm();
+        
         public signUpForm()
         {
             InitializeComponent();
         }
-        
+        public static string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                foreach (byte b in bytes)
+                {
+                    builder.Append(b.ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -116,10 +130,19 @@ namespace GWT
             
             string user = userTxt.Text.Trim();
             string pass = passTxt.Text.Trim();
+            string hashPass = HashPassword(pass);
 
             if (string.IsNullOrEmpty(userTxt.Text) || string.IsNullOrEmpty(passTxt.Text) || string.IsNullOrEmpty(ConPassTxt.Text))
             {
                 MessageBox.Show("All fields should be filled");
+            }
+            else if (userTxt.Text.Length < 8)
+            {
+                MessageBox.Show("Username must be atleast 8 characters");
+            }
+            else if (passTxt.Text.Length < 8)
+            {
+                MessageBox.Show("Password must be atleast 8 characters");
             }
             else if (pass != ConPassTxt.Text.Trim()) {
                 MessageBox.Show("Passwords Doesn't match");
@@ -136,10 +159,11 @@ namespace GWT
                     MySqlCommand cmd = new MySqlCommand(qry, con);
                     cmd.Parameters.AddWithValue("param1", null);
                     cmd.Parameters.AddWithValue("param2", user);
-                    cmd.Parameters.AddWithValue("param3", pass);
+                    cmd.Parameters.AddWithValue("param3", hashPass);
 
                     cmd.ExecuteNonQuery();
 
+                    landing.userPass = hashPass;
                     landing.trainingForm.username = user;
                     landing.trainingForm.isLoggedIn = true;
                     timer.Start();
@@ -167,6 +191,11 @@ namespace GWT
             this.Hide();
             landing.Show();
             timer.Stop();
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }
